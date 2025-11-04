@@ -167,7 +167,36 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="well-definedness"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">well-definedness</span>
 </h2>
-<div class="para" id="well-definedness-2">Text of section.<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="well-definedness-2">この節では、代数学において頻出する(退屈だが)重要な概念である、定義の<dfn class="terminology">well-definedness</dfn>について解説する。<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="well-definedness-3">ある概念の定義のwell-definednessとは定義が数学的に矛盾したり、循環していないときに使用する言葉である。これを、指数関数を例にとって理解しよう。<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="well-definedness-4">
+<div class="para">
+<span class="process-math">\(\frac{a}{b}=c\)</span>という有理数は、<span class="process-math">\(a=bc\)</span>を満たす<span class="process-math">\(c\)</span>が一意的に存在することを根拠に定義される。では、ゼロで割ることを考えてみてはどうか?</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{0}
+\end{equation*}
+</div>
+<div class="para">この場合、<span class="process-math">\(a=0c\)</span>となる</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c
+\end{equation*}
+</div>
+<div class="para">は存在しない。したがって、ゼロで割るという操作はwell-definedではない(定義の根拠が崩壊している)。 分子が0でも同様に、</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{0}{0}
+\end{equation*}
+</div>
+<div class="para">だから、<span class="process-math">\(0=0c\)</span>となる<span class="process-math">\(c\)</span>は任意の数が該当するため、well-definedではない(定義が一通りに定まらない)。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="well-definedness-5">他にも重要な例として、関数<span class="process-math">\(y=f(x)\)</span>は、<span class="process-math">\(x\)</span>に対して<span class="process-math">\(y\)</span>がただ一つ決まらない場合はwell-definedではなく、関数とは呼べない。 これは<span class="process-math">\(\frac{0}{0}\)</span>の場合と同じように、定義の方法が一通りに定まらないことによる。<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="well-definedness-6">だから例えば、実数<span class="process-math">\(x\)</span>に対してその平方根を返すような関数は、平方根が正負両方の値を取りうるため、well-definedではない。ここで注意されたいのは、<dfn class="terminology">2つの元に対して1つの値が定まるような関数はwell-definedである</dfn>ということである。<div class="autopermalink" data-description="Paragraph"><a href="#well-definedness-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 2.3: well-definedness"><a href="#well-definedness" title="Copy heading and permalink for Section 2.3: well-definedness" aria-label="Copy heading and permalink for Section 2.3: well-definedness">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
