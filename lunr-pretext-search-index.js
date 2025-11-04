@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "集合と論理",
-  "body": " 集合と論理  集合の元や包含関係に関する用語を準備することから始めよう。この本では集合の定義はしないが、その理由についてこの節の最後で少し触れる。  と書いて、 は 集合(Set) の 元(element) という。 逆に書くこともある( )。 であることを、 が に 属する(belong) ともいう。 をなにか空間的なものとして扱う時(例えば三次元ユークリッド空間 も集合である)、 を の点であるという。  数学者のほとんどは元を小文字で、集合を大文字で書く習慣がある。できる限り数学の習慣に従った書き方をすれば、数学的記述をわかりやすいものにすることができる。  を集合とする。任意の に対し、 なら であることを と書いて、 は の 部分集合である(subset) という。これも逆に書くことがある。 であるとき、 と書き、 これら集合は 等しい という。  数学における条件を記述する場合、込み入った内容になればなるほど、書き手でさえも混乱を生じる可能性がある。これを避けるために 論理記号(logical symbol) を 導入する。 が についての何らかの条件を表しているとき、「 ならば である」ことを と書く。 また、「任意の について が成り立つ」という文は と 全称記号(universal quantifier) で書くことにより表現し、 逆に「 を成り立たせるような が(複数あってもよい)存在する」という文は 存在記号(existential quantifier) を使って と表す。 にエクスクラメーションマーク(!)をつけて とすることにより、だた1つ存在することを表す(一意的に存在する、という)。  "
+  "body": " 集合と論理  集合の元や包含関係に関する用語を準備することから始めよう。この本では集合の定義はしないが、その理由についてこの節の最後で少し触れる。  と書いて、 は 集合(Set) の 元(element) という。 逆に書くこともある( )。 であることを、 が に 属する(belong) ともいう。 をなにか空間的なものとして扱う時(例えば三次元ユークリッド空間 も集合である)、 を の点であるという。  数学者のほとんどは元を小文字で、集合を大文字で書く習慣がある。できる限り数学の習慣に従った書き方をすれば、数学的記述をわかりやすいものにすることができる。  を集合とする。任意の に対し、 なら であることを と書いて、 は の 部分集合である(subset) という。これも逆に書くことがある。 であるとき、 と書き、 これら集合は 等しい という。  数学における条件を記述する場合、込み入った内容になればなるほど、書き手でさえも混乱を生じる可能性がある。これを避けるために 論理記号(logical symbol) を 導入する。 が についての何らかの条件を表しているとき、「 ならば である」ことを と書く。 また、「任意の について が成り立つ」という文は と 全称記号(universal quantifier) で書くことにより表現し、 逆に「 を成り立たせるような が(複数あってもよい)存在する」という文は 存在記号(existential quantifier) を使って と表す。 にエクスクラメーションマーク(!)をつけて とすることにより、だた1つ存在することを表す(一意的に存在する、という)。  集合 の元 のペア を 順序対(ordered pair) といい、順序対全体の集合を と書き、 直積集合(product set) という。 直積は次の 普遍性(universal property) をみたす:    任意の集合 と、任意の写像 が与えられているとする。直積 と、その 射影(projection) に対して、  一意に定まる写像の存在: 集合 から への写像 が 一意的に存在する。    可換性の条件: 1.の写像 は、 かつ   が成り立つ。                関数という言葉は通常、数から数への対応関係のことを指すであろう。現代数学においては定義域と値域を拡張し、任意の集合とする。この概念を 写像(mapping) という。 これはほとんど言葉の些細な用法の違いであるが、関数といえば特に数から数への写像であると思ってよい。 集合 から への写像 のことを と書き、 に対して が対応することを で表す。 写像を定義する場合には例えば などと書く。  "
 },
 {
   "id": "set-and-logic-3",
@@ -82,6 +82,42 @@ var ptx_lunr_docs = [
   "body": "論理記号(logical symbol) 全称記号(universal quantifier) 存在記号(existential quantifier) "
 },
 {
+  "id": "set-and-logic-7",
+  "level": "2",
+  "url": "set-and-logic.html#set-and-logic-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "順序対(ordered pair) 直積集合(product set) 普遍性(universal property) "
+},
+{
+  "id": "prop-product-univ",
+  "level": "2",
+  "url": "set-and-logic.html#prop-product-univ",
+  "type": "Proposition",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  任意の集合 と、任意の写像 が与えられているとする。直積 と、その 射影(projection) に対して、  一意に定まる写像の存在: 集合 から への写像 が 一意的に存在する。    可換性の条件: 1.の写像 は、 かつ   が成り立つ。           "
+},
+{
+  "id": "set-and-logic-9",
+  "level": "2",
+  "url": "set-and-logic.html#set-and-logic-9",
+  "type": "Remark",
+  "number": "2.2.2",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "set-and-logic-10",
+  "level": "2",
+  "url": "set-and-logic.html#set-and-logic-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "写像(mapping) "
+},
+{
   "id": "well-definedness",
   "level": "1",
   "url": "well-definedness.html",
@@ -107,6 +143,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "2つの元に対して1つの値が定まるような関数はwell-definedである "
+},
+{
+  "id": "choice-and-zorn",
+  "level": "1",
+  "url": "choice-and-zorn.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "選択公理とZorn’s Lemma",
+  "body": " 選択公理とZorn's Lemma    "
+},
+{
+  "id": "cardinality-of-sets",
+  "level": "1",
+  "url": "cardinality-of-sets.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "集合の濃度",
+  "body": " 集合の濃度  この節では濃度の概念について扱う。ただし、本書では濃度の概念を定義せず、  "
 },
 {
   "id": "group-theory",
