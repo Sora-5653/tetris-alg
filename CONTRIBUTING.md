@@ -74,16 +74,16 @@
     - 本書のコンテンツは `source` ディレクトリ内のXMLファイル (`.ptx`) で管理されている。これらのファイルを編集する。
     - PreTeXtbookの記法に従い、構造的な整合性を保つよう留意されたい。なお、原則としてソースファイルは
 
-    ```
-  source/
-  ├── main.ptx
-  ├── part1.ptx
-  ├── part2.ptx
-  ├── sections/
-  │ ├──logic-and-sets.ptx
-  │ ├──well-definedness.ptx
-  │ └── ...
-  └── ...
+    ```bash
+source/
+├── main.ptx
+├── part1.ptx
+├── part2.ptx
+├── sections/
+│ ├──logic-and-sets.ptx
+│ ├──well-definedness.ptx
+│ └── ...
+└── ...
     ```
     という構造になっていることを念頭におかれたい。
 
