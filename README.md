@@ -90,9 +90,9 @@
 
 貢献にあたっては、以下の手順に従っていただきたい。
 
-1.  当リポジトリをフォーク（Fork）する。
+1.  当リポジトリをForkするか、Codespaceを作成する。
 2.  変更内容に応じたブランチを作成する (`git checkout -b feature/your-feature`)。
-3.  変更をコミットする (`git commit -m 'Add some feature'`)。
+3.  変更をコミットする (`git commit -m 'Commit message here'`)。
 4.  作成したブランチをプッシュする (`git push origin feature/your-feature`)。
 5.  プルリクエスト（Pull Request）を作成する。
 
@@ -110,12 +110,11 @@
 
 ## 著者
 
-**[Founder, Head Auther: Sora3]**
+**Founder, Head Auther: Sora3**
 
 - GitHub: [@your-username](https://github.com/your-username)
 - Auther's X:
-  - [Sora3](https://your-personal-website.com)
-  - []
+  - [Sora3](https://x.com/sora__5653)
 
 ## 謝辞
 
