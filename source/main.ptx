@@ -6,13 +6,18 @@
 
   <book xml:id="my-great-book">
     <title>テトリスと代数学</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>Algebra and its application to Tetris</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./part0.ptx" />
+    <xi:include href="./part1.ptx" />
+    <!--<xi:include href="./part3.ptx" />
+    <xi:include href="./part4.ptx" />
+    <xi:include href="./part5.ptx" />
+    <xi:include href="./part6.ptx" /> -->
 
 
     <!-- Include backmatter -->
