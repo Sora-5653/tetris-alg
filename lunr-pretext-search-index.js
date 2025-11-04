@@ -88,16 +88,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "well-definedness",
-  "body": " well-definedness  この節では、代数学における(退屈だが)重要な概念である、定義の well-definedness について解説する。  ある概念の定義のwell-definednessとは定義が数学的に矛盾したり、循環していないときに使用する言葉である。これを、指数関数を例にとって理解しよう。  "
-},
-{
-  "id": "well-definedness-2",
-  "level": "2",
-  "url": "well-definedness.html#well-definedness-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "well-definedness "
+  "body": " well-definedness  Text of section.  "
 },
 {
   "id": "group-theory",
