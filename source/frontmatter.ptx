@@ -5,11 +5,10 @@
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <bibinfo>
-  
     <author>
-      <personname>Sora3</personname>
+      <personname>著者: Sora3</personname>
       <department>専門: 代数幾何学</department>
-      <institution>X: []()</institution>
+      <institution>X: <a href="https://x.com/sora__5653">Sora3</a></institution>
     </author>
     <date>
       <today />
@@ -22,7 +21,7 @@
     <copyright>
       <year>2025<ndash />2025</year>
       <holder>Sora3</holder>
-      <shortlicense>本書はMITライセンス下で公開されている。<url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <shortlicense>本書はクリエイティブ・コモンズ 4.0(CC BY 4.0)ライセンス下で公開されている。<url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   

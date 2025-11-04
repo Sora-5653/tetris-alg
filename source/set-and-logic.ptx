@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="set-and-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>集合と論理</title>
+
+  <p>集合の元や包含関係に関する用語を準備することから始めよう。この本では集合の定義はしないが、その理由についてこの節の最後で少し触れる。</p>
+
+  <p><m>x \in X</m>と書いて、<m>x</m>は<term>集合(Set)</term>の<term>元(element)</term>という。
+  逆に書くこともある。<m>x \in X</m>であることを、<m>x</m>が<m>X</m>に<term>属する(belong)</term>ともいう。
+  <m>X</m>をなにか空間的なものとして扱う時(例えば三次元ユークリッド空間<m>\mathbb R^3</m>も集合である)、<m>x</m>を<m>X</m>の点であるという。</p>
+
+  <p>数学者のほとんどは元を小文字で、集合を大文字で書く習慣がある。できる限り数学の習慣に従った書き方をすれば、数学的記述をわかりやすいものにすることができる。</p>
+
+  <p><m>X, Y</m>を集合とする。任意の<m>x \in X</m>に対し、<m>x\in X</m>なら<m>x \in Y</m>であることを<m>X \subset Y</m>と書いて、
+  <m>X</m>は<m>Y</m>の<term>部分集合である(subset)</term>という。これも逆に書くことがある。<m>X\subset Y, Y \subset X</m>であるとき、<m>X=Y</m>と書き、
+  これら集合は<term>等しい</term>という。</p>
+
+  <p>数学における条件を記述する場合、込み入った内容になればなるほど、書き手でさえも混乱を生じる可能性がある。これを避けるために<term>論理記号(logical symbol)</term>を
+  導入する。<m>P,Q</m>が<m>x</m>についての何らかの条件を表しているとき、「<m>P</m>ならば<m>Q</m>である」ことを<m>P \implies Q</m>と書く。
+  また、「任意の<m>x</m>について<m>P</m>が成り立つ」という文は<m>\forall x P</m>と<term>全称記号(universal quantifier)</term>で書くことにより表現し、
+  逆に「<m>P</m>を成り立たせるような<m>x</m>が(複数あってもよい)存在する」という文は<term>存在記号(existential quantifier)</term>を使って<m>\exists x P</m>と表す。
+  <m>\exists</m>にエクスクラメーションマーク(!)をつけて<m>\exists ! x</m>とすることにより、だた1つ存在することを表す(一意的に存在する、という)。</p>
+
+</section>

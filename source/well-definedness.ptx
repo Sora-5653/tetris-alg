@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="well-definedness" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>well-definedness</title>
+
+  <p>この節では、代数学における(退屈だが)重要な概念である、定義の<term>well-definedness</term>について解説する。</p>
+
+  <p>
+    ある概念の定義のwell-definednessとは定義が数学的に矛盾したり、循環していないときに使用する言葉である。これを、指数関数を例にとって理解しよう。
+  </p>
+
+</section>

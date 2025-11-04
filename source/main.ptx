@@ -12,7 +12,6 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./part0.ptx" />
     <xi:include href="./part1.ptx" />
     <!--<xi:include href="./part3.ptx" />
     <xi:include href="./part4.ptx" />
