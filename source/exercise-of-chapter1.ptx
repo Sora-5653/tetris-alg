@@ -24,7 +24,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>sinh(x)=\displayfrac{e^x+x^{-x}}{2}</m>
+                                <m>sinh(x)=\frac{e^x+x^{-x}}{2}</m>
                             </p>
                         </li>
                     </ol>
@@ -60,6 +60,82 @@
                     この場合、<m>\implies</m>側の仮定は単射であること(<m>f(a)\neq f(b)\implies a\neq b</m>)と全射であること(<m>\forall b\in B, \exists a, f(a)=b</m>)である。示すべき目標は合成写像が元<m>a</m>を動かさないことだから、まず具体的な元を<m>A</m>から取って考えてみればよいであろう。逆も同様にして考えよ。
                 </p>
             </hint>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    写像<m>f:A\to B</m>を考える。任意の部分集合<m>S\subset B</m>について、<ol>
+                        <li>
+                            <p>
+                                <m>f^-1(f(f^-1(S)))=f^-1(S)</m>であること
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m>が全射であることと、<m>f(f^-1(S))=S</m>であることが同値なこと
+                            </p>
+                        </li>
+                    </ol>
+                    を証明せよ。
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                内包表記で書き下す。<m>f^-1(f(X))=\{a\in A; \forall x\in f(X), f(a)=f(x)\}=X</m>である。これを問題に適用して<m>f^-1(f(f^-1(S)))=f^-1(S)</m>を得る。
+                            </p>
+                        </li>
+                        <li>
+                            <p><ol>
+                                <li>
+                                    <p>
+                                <m>\implies: f</m>が全射なら<m>s\in S</m>に対して<m>a\in Aがあり、f(a)=s</m>である。よって<m>s\in f(f^-1(S))</m>である。逆に<m>s\in f(f^-1(S))</m>に対しても<m>f(a)=sとなるa\in A</m>があり、<m>a\in f^-1(S), f(a)=s\in S</m>なので等号がわかる。
+                                    </p>
+                            </li>
+                                <li>
+                                    <p>
+                                        <m>\impliedby: f(f^-1(S))=S</m>は空でないと仮定してよい(空なら命題が意味をもたない)。<m>f(\emptyset)=\emptyset</m>にしかなり得ないことを考えると、逆像が空ではないので全射性がわかる。
+                                    </p>
+                                </li>
+                            </ol>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    well-definednessが問題になる状況を挙げよ。
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    例えば<m>f: \mathbb Q \to \mathbb Q</m>で、有理数<m>\frac{a}{b}</m>の分母と分子の和を返す写像として定義したいとしよう。<m>\frac{1}{2}=\frac{2}{4}</m>なので、この<m>f</m>は1つの有理数に対して無数に像ができることになる。これはwell-definednessが問題になる例の一つである。
+                </p>
+            </answer>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>|A|=|A'|かつ|B|=|B'|</m>ならば<m>|A\times B|=|A' \times B'|</m>であることを示せ。
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    まずは落ち着いて、全単射を構成することを考えよう。直積というのは順序対の全体であることを思い出して、命題2.2.2の証明を参考にせよ。
+                </p>
+            </hint>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    仮定<m>implies</m>結論 という命題において、仮定が誤っているならば、数学で通常用いる論理体系では結論は常に真である。例えば部屋にスマホがあるなら、その電源は切れているという命題を考える。この状況で仮定が偽、つまり部屋にスマホが存在しない状況を考えれば、電源の入ったスマートフォンは部屋に存在しない。したがってこの命題は真となる。この現象を「空虚な真」と呼ぶ。これを使って、「空集合が任意の集合の部分集合である」ことを証明せよ。
+                </p>
+            </statement>
         </exercise>
     </exercises>
 </section>
