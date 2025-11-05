@@ -181,10 +181,33 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="set-and-logic-6">数学における条件を記述する場合、込み入った内容になればなるほど、書き手でさえも混乱を生じる可能性がある。これを避けるために<dfn class="terminology">論理記号(logical symbol)</dfn>を 導入する。<span class="process-math">\(P,Q\)</span>が<span class="process-math">\(x\)</span>についての何らかの条件を表しているとき、「<span class="process-math">\(P\)</span>ならば<span class="process-math">\(Q\)</span>である」ことを<span class="process-math">\(P \implies Q\)</span>と書く。 また、「任意の<span class="process-math">\(x\)</span>について<span class="process-math">\(P\)</span>が成り立つ」という文は<span class="process-math">\(\forall x P\)</span>と<dfn class="terminology">全称記号(universal quantifier)</dfn>で書くことにより表現し、 逆に「<span class="process-math">\(P\)</span>を成り立たせるような<span class="process-math">\(x\)</span>が(複数あってもよい)存在する」という文は<dfn class="terminology">存在記号(existential quantifier)</dfn>を使って<span class="process-math">\(\exists x P\)</span>と表す。 <span class="process-math">\(\exists\)</span>にエクスクラメーションマーク(!)をつけて<span class="process-math">\(\exists ! x\)</span>とすることにより、だた1つ存在することを表す(一意的に存在する、という)。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="set-and-logic-7">集合<span class="process-math">\(A,B\)</span>の元<span class="process-math">\(a, b\)</span>のペア<span class="process-math">\((a,b)\)</span>を<dfn class="terminology">順序対(ordered pair)</dfn>といい、順序対全体の集合を<span class="process-math">\(A\times B\)</span>と書き、<dfn class="terminology">直積集合(product set)</dfn>という。 直積は次の<dfn class="terminology">普遍性(universal property)</dfn>をみたす:<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="set-and-logic-7">集合<span class="process-math">\(A,B\)</span>の元<span class="process-math">\(a, b\)</span>のペア<span class="process-math">\((a,b)\)</span>を<dfn class="terminology">順序対(ordered pair)</dfn>といい、順序対全体の集合を<span class="process-math">\(A\times B\)</span>と書き、<dfn class="terminology">直積集合(product set)</dfn>という。 自然数<span class="process-math">\(n\)</span>に対し、<span class="process-math">\(n\)</span>回の直積を<span class="process-math">\(A^n\)</span>で表す。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="proposition theorem-like" id="prop-product-univ"><h3 class="heading">
-<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="para" id="set-and-logic-8">関数という言葉は通常、数から数への対応関係のことを指すであろう。現代数学においては定義域と値域を拡張し、任意の集合とする。この概念を<dfn class="terminology">写像(mapping)</dfn>という。 これはほとんど言葉の些細な用法の違いであるが、関数といえば特に数から数への写像であると思ってよい。 集合<span class="process-math">\(A\)</span>から<span class="process-math">\(B\)</span>への写像<span class="process-math">\(f\)</span>のことを<span class="process-math">\(f:A \to B\)</span>と書き、<span class="process-math">\(a \in A\)</span>に対して<span class="process-math">\(f(a)=b\)</span>が対応することを<span class="process-math">\(a \mapsto b\)</span>で表す。 写像を定義する場合には例えば<span class="process-math">\(f:\mathbb R \to \mathbb R; x \mapsto x^2\)</span>などと書く(<span class="process-math">\(\mathbb R\)</span>は実数の集合)。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="set-and-logic-9">
+<div class="para">
+<span class="process-math">\(f:A\to B, g:B\to C\)</span>で、</div>
+<div class="displaymath process-math">
+\begin{equation*}
+fの値域 \subseteq gの定義域
+\end{equation*}
+</div>
+<div class="para">であるときに限り、<dfn class="terminology">写像の合成(composition)</dfn><span class="process-math">\(g \circ f\)</span>を、</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(f(x))
+\end{equation*}
+</div>
+<div class="para">で定義する。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="set-and-logic-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="set-and-logic-10-1">つまらない例ではあるが、<span class="process-math">\(XY\)</span>平面は<span class="process-math">\(\mathbb R^2\)</span>と思うことができる。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.2.1"><a href="#set-and-logic-10" title="Copy heading and permalink for Example 2.2.1" aria-label="Copy heading and permalink for Example 2.2.1">🔗</a></div></article></details><article class="proposition theorem-like" id="prop-product-univ"><h3 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="prop-product-univ-1-1">
 <div class="para">任意の集合<span class="process-math">\(X\)</span>と、任意の写像<span class="process-math">\(f:X\to A, g:X\to B\)</span>が与えられているとする。直積<span class="process-math">\(A\times B\)</span>と、その<dfn class="terminology">射影(projection)</dfn><span class="process-math">\(\pi_A:A\times B \to A, \pi_B:A\times B \to B\)</span>に対して、</div>
@@ -216,17 +239,33 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">が成り立つ。</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#prop-product-univ-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proposition 2.2.1"><a href="#prop-product-univ" title="Copy heading and permalink for Proposition 2.2.1" aria-label="Copy heading and permalink for Proposition 2.2.1">🔗</a></div></article><details id="prop-product-univ-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="prop-product-univ-2-1">
-          <div class="para" id="prop-product-univ-2-1-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#prop-product-univ-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-        <div class="autopermalink" data-description="Paragraph"><a href="#prop-product-univ-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Proposition 2.2.2"><a href="#prop-product-univ" title="Copy heading and permalink for Proposition 2.2.2" aria-label="Copy heading and permalink for Proposition 2.2.2">🔗</a></div></article><details id="prop-product-univ-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical" id="prop-product-univ-2-1">
+<div class="para">具体的に写像を構成して示す。</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\pi_A:A\times B;(a,b)\mapsto a,
+\end{equation*}
 </div>
-<div class="autopermalink" data-description="Proof 2.2.1.1"><a href="#prop-product-univ-2" title="Copy heading and permalink for Proof 2.2.1.1" aria-label="Copy heading and permalink for Proof 2.2.1.1">🔗</a></div></article></details><article class="remark remark-like" id="set-and-logic-9"><h3 class="heading">
-<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="displaymath process-math">
+\begin{equation*}
+\pi_B: A\times B;(a,b)\mapsto b
+\end{equation*}
+</div>
+<div class="para">とおく。 <span class="process-math">\(u\)</span>を<span class="process-math">\(u(x):=(f_A(x),f_B(x))\)</span>で定義する。<span class="process-math">\((\pi_A \circ u)\)</span>は<span class="process-math">\(x\mapsto (f_A(x),f_B(x))\mapsto f_A(x)\)</span>という送り方をするので、題意が従う。 <span class="process-math">\(\pi_B\)</span>についても同じように考えれば明らかである。 一意性を示そう。仮に<span class="process-math">\(u\)</span>の他に<span class="process-math">\(v\)</span>が存在して、</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v(x)=(s,t)\in A\times B, (\pi_A\circ v)(x)=s
+\end{equation*}
+</div>
+<div class="para">となったとき、可換性から<span class="process-math">\(f_A(x)=s\)</span>である。<span class="process-math">\(f_A\)</span>は<span class="process-math">\(\pi_A\circ u\)</span>とも等しかったので、<span class="process-math">\(u\)</span>の定義から、結局同じ写像を考えていることになっている。 つまり、他に可換性を満たすような写像を考えても<span class="process-math">\(u\)</span>に一致する。これはつまり一意性を意味する。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#prop-product-univ-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 2.2.2.1"><a href="#prop-product-univ-2" title="Copy heading and permalink for Proof 2.2.2.1" aria-label="Copy heading and permalink for Proof 2.2.2.1">🔗</a></div></article></details><article class="remark remark-like" id="set-and-logic-12"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="set-and-logic-9-1"><div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Remark 2.2.2"><a href="#set-and-logic-9" title="Copy heading and permalink for Remark 2.2.2" aria-label="Copy heading and permalink for Remark 2.2.2">🔗</a></div></article><div class="para" id="set-and-logic-10">関数という言葉は通常、数から数への対応関係のことを指すであろう。現代数学においては定義域と値域を拡張し、任意の集合とする。この概念を<dfn class="terminology">写像(mapping)</dfn>という。 これはほとんど言葉の些細な用法の違いであるが、関数といえば特に数から数への写像であると思ってよい。 集合<span class="process-math">\(A\)</span>から<span class="process-math">\(B\)</span>への写像<span class="process-math">\(f\)</span>のことを<span class="process-math">\(f:A \to B\)</span>と書き、<span class="process-math">\(a \in A\)</span>に対して<span class="process-math">\(f(a)=b\)</span>が対応することを<span class="process-math">\(a \mapsto b\)</span>で表す。 写像を定義する場合には例えば<span class="process-math">\(f:\mathbb R \to R; x \mapsto x^2\)</span>などと書く。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="set-and-logic-12-1">これは、第2部で学ぶ<dfn class="terminology">圏論(Category theory)</dfn>の結果を下ろしてきたものである。直積は集合論における非常に基本的な構成法であり、のちに学ぶ群論や可換環論でも頻出する。 圏論的には、集合とは、集合全体の集まり(圏<span class="process-math">\(\mathbf{Sets}\)</span>)の一点のようなものである。上の命題では集合のすべての直積に成り立つ普遍的性質を証明したが、群や可換環、はたまた集まりの集まり(小圏の圏)に至るまで同じ命題が成り立つ。 異なる対象の集まり同士の間に共通の構造を見出すことこそが圏論の一つの大きな意義である。 なお、直積の兄弟的存在として<dfn class="terminology">Disjoint union(非交和)<span class="process-math">\(A\sqcup B\)</span></dfn>がある。これは<span class="process-math">\({(A\times \{0\})\cup (B \times \{1\})}\)</span>で定義される。Disjoint unionの各元は<span class="process-math">\((x, 0か1)\)</span>という形をしているが、これは<span class="process-math">\(x\)</span>の出身が0(Aから)か1(Bから)でラベル付けされているようなものと思ってよい。 さきほどの命題における直積をDisjoint unionに、そして写像の向きをすべて逆にすれば、Disjoint unionについても同様の命題が成立する。<div class="autopermalink" data-description="Paragraph"><a href="#set-and-logic-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 2.2: 集合と論理"><a href="#set-and-logic" title="Copy heading and permalink for Section 2.2: 集合と論理" aria-label="Copy heading and permalink for Section 2.2: 集合と論理">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Remark 2.2.3"><a href="#set-and-logic-12" title="Copy heading and permalink for Remark 2.2.3" aria-label="Copy heading and permalink for Remark 2.2.3">🔗</a></div></article><div class="autopermalink" data-description="Section 2.2: 集合と論理"><a href="#set-and-logic" title="Copy heading and permalink for Section 2.2: 集合と論理" aria-label="Copy heading and permalink for Section 2.2: 集合と論理">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sets-and-mathematics.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="well-definedness.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
