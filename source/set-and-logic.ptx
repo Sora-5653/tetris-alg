@@ -26,6 +26,13 @@
     直積は次の<term>普遍性(universal property)</term>をみたす:
   </p>
 
+  <p>
+    関数という言葉は通常、数から数への対応関係のことを指すであろう。現代数学においては定義域と値域を拡張し、任意の集合とする。この概念を<term>写像(mapping)</term>という。
+    これはほとんど言葉の些細な用法の違いであるが、関数といえば特に数から数への写像であると思ってよい。
+    集合<m>A</m>から<m>B</m>への写像<m>f</m>のことを<m>f:A \to B</m>と書き、<m>a \in A</m>に対して<m>f(a)=b</m>が対応することを<m>a \mapsto b</m>で表す。
+    写像を定義する場合には例えば<m>f:\mathbb R \to R; x \mapsto x^2</m>などと書く。
+  </p>
+
   <proposition xml:id="prop-product-univ">
     <statement>
       <p>
@@ -46,12 +53,11 @@
       </p>
     </statement>
     <proof>
-      <p>
+      <p>具体的に写像を構成して示す。<ol>
         <li>
-          <p>
-            
-          </p>
+          
         </li>
+       </ol>
       </p>
     </proof>
   </proposition>
@@ -60,12 +66,5 @@
       
     </p>
   </remark>
-
-  <p>
-    関数という言葉は通常、数から数への対応関係のことを指すであろう。現代数学においては定義域と値域を拡張し、任意の集合とする。この概念を<term>写像(mapping)</term>という。
-    これはほとんど言葉の些細な用法の違いであるが、関数といえば特に数から数への写像であると思ってよい。
-    集合<m>A</m>から<m>B</m>への写像<m>f</m>のことを<m>f:A \to B</m>と書き、<m>a \in A</m>に対して<m>f(a)=b</m>が対応することを<m>a \mapsto b</m>で表す。
-    写像を定義する場合には例えば<m>f:\mathbb R \to R; x \mapsto x^2</m>などと書く。
-  </p>
 
 </section>
