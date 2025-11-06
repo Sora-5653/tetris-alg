@@ -56,6 +56,8 @@
   <chapter xml:id="group-theory">
     <title>群論</title>
     
+    <xi:include href="./definition-group.ptx" />
+
   </chapter>
 
 
