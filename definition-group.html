@@ -129,7 +129,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="group-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="group-theory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="group-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="group-theory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-def-ring-field.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -173,7 +173,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="group-theory.html" class="internal"><span class="codenumber">3</span> <span class="title">群論</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="definition-group.html" class="internal"><span class="codenumber">3.1</span> <span class="title">群の定義</span></a></div></li></ul>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="definition-group.html" class="internal"><span class="codenumber">3.1</span> <span class="title">群の定義</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-def-ring-field.html" class="internal"><span class="codenumber">3.2</span> <span class="title">環, 体の定義</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -184,7 +187,7 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <div class="para" id="definition-group-2">群とは演算の定義された集合である。これは数であってもよいし、「群の公理」をみたす集合ならなんでも群と呼んでよい。 数の概念と真反対にある、直線の束のような図形的対象に群構造が入る場合すらも存在する(Picard群)。この多くを包括する抽象性こそが、群、より一般に代数構造の強みであり、この分野の難しさでもある。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="definition-group-3">のちに学ぶ「パリティ追跡理論」では地形に対する操作が群をなす。それがある部分集合への「作用」を定めることを確認することにより、 具体的な地形の表示をいちいち気にすることなくパリティの変化の情報を取り出すことができる。(第5部参照) ほかにも、有名な「5次以上の方程式を代数的に解くことはできない」という命題も、方程式の根がなす群と、 代数的に方程式を解く過程を表現する"体"(四則演算ができる集合)との対応関係を眺めることで証明できるのだ。(次章3節参照)<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-group-3">のちに学ぶ「パリティ追跡理論」では地形に対する操作が群をなす。それがある部分集合への「作用」を定めることを確認することにより、 具体的な地形の表示をいちいち気にすることなくパリティの変化の情報を取り出すことができる。(第2部参照) ほかにも、有名な「5次以上の方程式を代数的に解くことはできない」という命題も、方程式の根がなす群と、 代数的に方程式を解く過程を表現する"体"(四則演算ができる集合)との対応関係を眺めることで証明できるのだ。(第4章3節参照)<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="definition-group-4">群論の諸概念は決して難しいものばかりではない。しかし、その一般性と他の概念との有機的なつながりが、群論の世界を非常に豊かなものにしている。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -215,12 +218,80 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Definition 3.1.1: 群"><a href="#definition-group-5" title="Copy heading and permalink for Definition 3.1.1: 群" aria-label="Copy heading and permalink for Definition 3.1.1: 群">🔗</a></div></article><div class="para" id="definition-group-6">集合に群構造が定義されるとき、その集合には群構造が<dfn class="terminology">入る(induced)</dfn>と表現する。群の任意の元<span class="process-math">\(a,b\)</span>について可換性<span class="process-math">\(ab=ba\)</span>が成り立つとき、その群は<dfn class="terminology">可換群(Commutative group)</dfn>という。可換群はアーベル群(Abelian group)や加法群(Additive group)などともいう。本によっては加法群を加群と呼んでいるが、これは大抵の場合では誤りである(加群は別の概念を指す)。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-group-7"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">群の位数.</span>
 </h3>
-<div class="para" id="definition-group-7-1-1"><div class="autopermalink" data-description="Paragraph"><a href="#definition-group-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Definition 3.1.2"><a href="#definition-group-7" title="Copy heading and permalink for Definition 3.1.2" aria-label="Copy heading and permalink for Definition 3.1.2">🔗</a></div></article><div class="autopermalink" data-description="Section 3.1: 群の定義"><a href="#definition-group" title="Copy heading and permalink for Section 3.1: 群の定義" aria-label="Copy heading and permalink for Section 3.1: 群の定義">🔗</a></div></section></div>
+<div class="para" id="definition-group-7-2-1">
+<span class="process-math">\(G\)</span>を群とする。その元の個数<span class="process-math">\(|G|\)</span>を群<span class="process-math">\(G\)</span>の<dfn class="terminology">位数(Order)</dfn>という。位数有限な群のことを<dfn class="terminology">有限群(finite group)</dfn>といい、有限でない群を<dfn class="terminology">無限群</dfn>という。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.1.2: 群の位数"><a href="#definition-group-7" title="Copy heading and permalink for Definition 3.1.2: 群の位数" aria-label="Copy heading and permalink for Definition 3.1.2: 群の位数">🔗</a></div></article><div class="para logical" id="definition-group-8">
+<div class="para">
+<span class="process-math">\(a^0:=1, a^n:=\underbrace{a\cdots a}_{n回}, a^{-n}:=(a^n)^{-1}\)</span>と定義する。明らかに、<span class="process-math">\(n, m\in \mathbb Z(\mathbb Zは整数)\)</span>に対して<dfn class="terminology">指数法則</dfn>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a^{n+m}=a^na^m, (a^n)^m=a^nm
+\end{equation*}
+</div>
+<div class="para">が成り立つ。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="definition-group-9">群の例を与える。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="definition-group-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="definition-group-10-1-1">
+<div class="para">慣れ親しんだ数体系</div>
+<ol class="decimal" id="definition-group-10-1-1-1">
+<li id="definition-group-10-1-1-1-1">
+<div class="para" id="definition-group-10-1-1-1-1-1">整数<span class="process-math">\(\mathbb Z,\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-group-10-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#definition-group-10-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="definition-group-10-1-1-1-2">
+<div class="para" id="definition-group-10-1-1-1-2-1">有理数<span class="process-math">\(\mathbb Q,\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-group-10-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#definition-group-10-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="definition-group-10-1-1-1-3">
+<div class="para" id="definition-group-10-1-1-1-3-1">実数<span class="process-math">\(\mathbb R,\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-group-10-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#definition-group-10-1-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="definition-group-10-1-1-1-4">
+<div class="para" id="definition-group-10-1-1-1-4-1">複素数<span class="process-math">\(\mathbb C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-group-10-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#definition-group-10-1-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="para">は、通常用いる加法<span class="process-math">\(+\)</span>、任意の元<span class="process-math">\(x\)</span>に対する逆元を<span class="process-math">\(-x\)</span>とすることで明らかに群になる。これらは無限群である。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.3"><a href="#definition-group-10" title="Copy heading and permalink for Example 3.1.3" aria-label="Copy heading and permalink for Example 3.1.3">🔗</a></div></article></details><details id="definition-group-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="definition-group-11-1-1">同様にして<span class="process-math">\(Q\setminus\{0\},R\setminus\{0\},C\setminus\{0\}\)</span>は、通常の乗法<span class="process-math">\(\times\)</span>、逆元を<span class="process-math">\(\frac{1}{x}\)</span>とすることで群になる。これも無限群である。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.4"><a href="#definition-group-11" title="Copy heading and permalink for Example 3.1.4" aria-label="Copy heading and permalink for Example 3.1.4">🔗</a></div></article></details><details id="definition-group-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">有限群の例.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="definition-group-12-2-1">
+<span class="process-math">\(G={a,b}\)</span>とする。<span class="process-math">\(aa=a,ab=b,ba=b,bb=a\)</span>とすると、これは明らかに群である。<span class="process-math">\(|G|=2\)</span>なのでこれは有限群である。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="figure-trivial-finite-group"><div class="para logical" id="figure-trivial-finite-group-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|cc}
+\cdot &amp; a &amp; b \\
+\hline
+a   &amp; a &amp; b \\
+b   &amp; b &amp; a
+\end{array}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#figure-trivial-finite-group-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.1.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(G\)</span>の<dfn class="terminology">乗法表(Multiplication table)</dfn>。<div class="autopermalink" data-description="Figure 3.1.6"><a href="#figure-trivial-finite-group" title="Copy heading and permalink for Figure 3.1.6" aria-label="Copy heading and permalink for Figure 3.1.6">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Example 3.1.5: 有限群の例"><a href="#definition-group-12" title="Copy heading and permalink for Example 3.1.5: 有限群の例" aria-label="Copy heading and permalink for Example 3.1.5: 有限群の例">🔗</a></div></article></details><div class="para" id="definition-group-13">なお、群の単位元は一意的である。実際、<span class="process-math">\(1,e\)</span>が単位元の性質を満たすなら、<span class="process-math">\(1=1e=e1=e\)</span>である。<div class="autopermalink" data-description="Paragraph"><a href="#definition-group-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 3.1: 群の定義"><a href="#definition-group" title="Copy heading and permalink for Section 3.1: 群の定義" aria-label="Copy heading and permalink for Section 3.1: 群の定義">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="group-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="group-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-def-ring-field.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
