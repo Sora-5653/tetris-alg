@@ -24,7 +24,7 @@
                   <li>
                     <p>
                     写像<m>f:A\to B</m>が<term>単射(injective)</term>であるとは、<m>f(a)=f(b)\implies a=b</m>が成り立つことである。
-                    <m>f</m>が<term>全射(surjective, onto)</term>であるとは、任意の<m>b\in Bに対して、f(a)=b</m>となるような<m>a</m>が存在することである。<term>逆像(inverse image)</term><m>f^-1(b):={a \in A, f(a)=b}</m>が空集合でないと言い換えてもよい。
+                    <m>f</m>が<term>全射(surjective, onto)</term>であるとは、任意の<m>b\in Bに対して、f(a)=b</m>となるような<m>a</m>が存在することである。<term>逆像(inverse image)</term><m>f^{-1}(b):=\{a \in A, f(a)=b\}</m>が空集合でないと言い換えてもよい。
                     <term>全単射(bijective)</term>であるとは、全射かつ単射であることをいう。
                     </p>
                   </li>
@@ -40,7 +40,7 @@
                   </li>
                   <li>
                     <p>
-                        <m>|A| \leq |B|で|A|\neq |B|</m>なら<m>|A|\gt |B|</m>と定義する。
+                        <m>|A| \leq |B|で|A|\neq |B|</m>なら<m>|A|\lt |B|</m>と定義する。
                     </p>
                   </li>
                 </ol>
