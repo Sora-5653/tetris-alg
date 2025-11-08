@@ -51,11 +51,88 @@
 <p>集合に群構造が定義されるとき、その集合には群構造が<term>入る(induced)</term>と表現する。群の任意の元<m>a,b</m>について可換性<m>ab=ba</m>が成り立つとき、その群は<term>可換群(Commutative group)</term>という。可換群はアーベル群(Abelian group)や加法群(Additive group)などともいう。本によっては加法群を加群と呼んでいるが、これは大抵の場合では誤りである(加群は別の概念を指す)。</p>
 
 <definition>
+    <title>群の位数</title>
     <statement>
         <p>
-            
+            <m>G</m>を群とする。その元の個数<m>|G|</m>を群<m>G</m>の<term>位数(Order)</term>という。位数有限な群のことを<term>有限群(finite group)</term>といい、有限でない群を<term>無限群</term>という。
         </p>
     </statement>
 </definition>
+
+<p>
+    <m>a^0:=1, a^n:=\underbrace{a\cdots a}_{n回}, a^{-n}:=(a^n)^{-1}</m>と定義する。明らかに、<m>n, m\in \mathbb Z(\mathbb Zは整数)</m>に対して<term>指数法則</term><me>a^{n+m}=a^na^m, (a^n)^m=a^nm</me>が成り立つ。
+</p>
+
+<p>
+    群の例を与える。
+</p>
+
+<example>
+    <statement>
+        <p>
+            慣れ親しんだ数体系
+            <ol>
+                <li>
+                    <p>
+                        整数<m>\mathbb Z,</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        有理数<m>\mathbb Q,</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        実数<m>\mathbb R,</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        複素数<m>\mathbb C</m>
+                    </p>
+                </li>
+            </ol>
+            は、通常用いる加法<m>+</m>、任意の元<m>x</m>に対する逆元を<m>-x</m>とすることで明らかに群になる。これらは無限群である。
+        </p>
+    </statement>
+</example>
+
+<example>
+    <statement>
+        <p>
+            同様にして<m>Q\setminus\{0\},R\setminus\{0\},C\setminus\{0\}</m>は、通常の乗法<m>\times</m>、逆元を<m>\frac{1}{x}</m>とすることで群になる。これも無限群である。
+        </p>
+    </statement>
+</example>
+
+<example>
+    <title>有限群の例</title>
+    
+    <statement>
+        <p>
+            <m>G={a,b}</m>とする。<m>aa=a,ab=b,ba=b,bb=a</m>とすると、これは明らかに群である。<m>|G|=2</m>なのでこれは有限群である。
+        </p>
+
+        <figure xml:id="figure-trivial-finite-group">
+
+        <caption><m>G</m>の<term>乗法表(Multiplication table)</term>。</caption>
+
+        <p>
+            <me>
+                \begin{array}{c|cc}
+                <![CDATA[ \cdot & a & b \\
+                \hline
+                a   & a & b \\
+                b   & b & a]]>
+                \end{array}
+            </me>
+            
+        </p>
+        </figure>
+    </statement>
+</example>
+
+<p>なお、群の単位元は一意的である。実際、<m>1,e</m>が単位元の性質を満たすなら、<m>1=1e=e1=e</m>である。</p>
 
 </section>
