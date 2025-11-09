@@ -60,7 +60,7 @@
 </definition>
 
 <p>
-    <m>a^0:=1, a^n:=\underbrace{a\cdots a}_{n回}, a^{-n}:=(a^n)^{-1}</m>と定義する。明らかに、<m>n, m\in \mathbb Z(\mathbb Zは整数)</m>に対して<term>指数法則</term><me>a^{n+m}=a^na^m, (a^n)^m=a^nm</me>が成り立つ。
+    <m>a^0:=1, a^n:=\underbrace{a\cdots a}_{n回}, a^{-n}:=(a^n)^{-1}</m>と定義する。明らかに、<m>n, m\in \mathbb Z(\mathbb Zは整数)</m>に対して<term>指数法則</term><me>a^{n+m}=a^na^m, (a^n)^m=a^{nm}</me>が成り立つ。
 </p>
 
 <p>
