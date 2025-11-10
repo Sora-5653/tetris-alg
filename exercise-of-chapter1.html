@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>第1章の演習問題と略解</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="テトリスと代数学">
+<meta property="book:author" content="著者: Sora3">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.18';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cefb0224014f3333.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c50cdcad467c8d3e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">テトリスと代数学</span> <span class="subtitle">Algebra and its application to Tetris</span></a></h1>
+<p class="byline">著者: Sora3</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="cardinality-of-sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="set-theory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="group-theory.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part-1.html" class="internal"><span class="codenumber">I</span> <span class="title">代数学の基礎</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="part0.html" class="internal"><span class="codenumber">1</span> <span class="title">なぜ代数学なのか?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-what-is-algebra.html" class="internal"><span class="codenumber">1.1</span> <span class="title">代数学とは何か?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="example-parity.html" class="internal"><span class="codenumber">1.2</span> <span class="title">例: パリティ</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="example-tiling.html" class="internal"><span class="codenumber">1.3</span> <span class="title">例: タイリング</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="set-theory.html" class="internal"><span class="codenumber">2</span> <span class="title">集合論</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sets-and-mathematics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">集合と現代数学</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="set-and-logic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">集合と論理</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="well-definedness.html" class="internal"><span class="codenumber">2.3</span> <span class="title">well-definedness</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="choice-and-zorn.html" class="internal"><span class="codenumber">2.4</span> <span class="title">選択公理とZorn’s Lemma</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cardinality-of-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">集合の濃度</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="exercise-of-chapter1.html" class="internal"><span class="codenumber">2.6</span> <span class="title">第1章の演習問題と略解</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="exercise-of-chapter1.html#exercises-chapter1" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="group-theory.html" class="internal"><span class="codenumber">3</span> <span class="title">群論</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="definition-group.html" class="internal"><span class="codenumber">3.1</span> <span class="title">群の定義</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-def-ring-field.html" class="internal"><span class="codenumber">3.2</span> <span class="title">環, 体の定義</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-subgroup-and-generator.html" class="internal"><span class="codenumber">3.3</span> <span class="title">部分群と生成元</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="exercise-of-chapter1"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">第1章の演習問題と略解</span>
+</h2>
+<section class="exercises" id="exercises-chapter1"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-chapter1-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-1-1-1">
+<span class="process-math">\(\mathbb Rから\mathbb R\)</span>への全単射の例を3つ挙げよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-chapter1-1-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="exercises-chapter1-1-2-1-1">
+<li id="exercises-chapter1-1-2-1-1-1">
+<div class="para" id="exercises-chapter1-1-2-1-1-1-1">
+<span class="process-math">\(\displaystyle y=ax+b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.1.a"><a href="#exercises-chapter1-1-2-1-1-1" title="Copy heading and permalink for Item 2.6.1.a" aria-label="Copy heading and permalink for Item 2.6.1.a">🔗</a></div>
+</li>
+<li id="exercises-chapter1-1-2-1-1-2">
+<div class="para" id="exercises-chapter1-1-2-1-1-2-1">
+<span class="process-math">\(\displaystyle y=x^{2n+1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.1.b"><a href="#exercises-chapter1-1-2-1-1-2" title="Copy heading and permalink for Item 2.6.1.b" aria-label="Copy heading and permalink for Item 2.6.1.b">🔗</a></div>
+</li>
+<li id="exercises-chapter1-1-2-1-1-3">
+<div class="para" id="exercises-chapter1-1-2-1-1-3-1">
+<span class="process-math">\(\displaystyle \sinh (x)=\frac{e^x+x^{-x}}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.1.c"><a href="#exercises-chapter1-1-2-1-1-3" title="Copy heading and permalink for Item 2.6.1.c" aria-label="Copy heading and permalink for Item 2.6.1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.1.1"><a href="#exercises-chapter1-1-2" title="Copy heading and permalink for Answer 2.6.1.1" aria-label="Copy heading and permalink for Answer 2.6.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.1"><a href="#exercises-chapter1-1" title="Copy heading and permalink for Exercise 2.6.1" aria-label="Copy heading and permalink for Exercise 2.6.1">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-2-1-1">全射、単射の定義を「送られる」とか「送られてくる」というような言葉を使って表現せよ。それと全射、単射の定義を照らし合わせ、形式的な定義で何を言おうとしているのかを掴め。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="exercises-chapter1-2-2-1">単射は、値域における2つの元が等しくないならば、それぞれ違う元から送られてきていること。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercises-chapter1-2-2-2">全射は、値域の元を任意に取ると、それに送るような定義域の元が存在すること。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.2.1"><a href="#exercises-chapter1-2-2" title="Copy heading and permalink for Answer 2.6.2.1" aria-label="Copy heading and permalink for Answer 2.6.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.2"><a href="#exercises-chapter1-2" title="Copy heading and permalink for Exercise 2.6.2" aria-label="Copy heading and permalink for Exercise 2.6.2">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-3-1-1">
+<span class="process-math">\(f:A\to B\)</span>が全単射であることと、<span class="process-math">\(f\)</span>が逆写像<span class="process-math">\(g\)</span>を持つ(<span class="process-math">\(g\circ f=\mathrm{id}_Aかつf \circ g=\mathrm{id}_B\)</span>、なお<span class="process-math">\(\mathrm{id}\)</span>は入力と出力が一致する写像)ことが同値であることを証明せよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="exercises-chapter1-3-2-1">同値を示す問題は、まず落ち着いて<span class="process-math">\(\implies\)</span>と<span class="process-math">\(\impliedby\)</span>それぞれの場合に、使える仮定と示すべき目標点を明確にすることから始めよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercises-chapter1-3-2-2">この場合、<span class="process-math">\(\implies\)</span>側の仮定は単射であること(<span class="process-math">\(f(a)\neq f(b)\implies a\neq b\)</span>)と全射であること(<span class="process-math">\(\forall b\in B, \exists a, f(a)=b\)</span>)である。示すべき目標は合成写像が元<span class="process-math">\(a\)</span>を動かさないことだから、まず具体的な元を<span class="process-math">\(A\)</span>から取って考えてみればよいであろう。逆も同様にして考えよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 2.6.3.1"><a href="#exercises-chapter1-3-2" title="Copy heading and permalink for Hint 2.6.3.1" aria-label="Copy heading and permalink for Hint 2.6.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.3"><a href="#exercises-chapter1-3" title="Copy heading and permalink for Exercise 2.6.3" aria-label="Copy heading and permalink for Exercise 2.6.3">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para logical" id="exercises-chapter1-4-1-1">
+<div class="para">写像<span class="process-math">\(f:A\to B\)</span>を考える。任意の部分集合<span class="process-math">\(S\subset B\)</span>について、</div>
+<ol class="lower-alpha lower-alpha-level-1" id="exercises-chapter1-4-1-1-3">
+<li id="exercises-chapter1-4-1-1-3-1">
+<div class="para" id="exercises-chapter1-4-1-1-3-1-1">
+<span class="process-math">\(f^{-1}(f(f^{-1}(S)))=f^{-1}(S)\)</span>であること<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.a"><a href="#exercises-chapter1-4-1-1-3-1" title="Copy heading and permalink for Item 2.6.4.a" aria-label="Copy heading and permalink for Item 2.6.4.a">🔗</a></div>
+</li>
+<li id="exercises-chapter1-4-1-1-3-2">
+<div class="para" id="exercises-chapter1-4-1-1-3-2-1">
+<span class="process-math">\(f\)</span>が全射であることと、<span class="process-math">\(f(f^{-1}(S))=S\)</span>であることが同値なこと<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.b"><a href="#exercises-chapter1-4-1-1-3-2" title="Copy heading and permalink for Item 2.6.4.b" aria-label="Copy heading and permalink for Item 2.6.4.b">🔗</a></div>
+</li>
+</ol>
+<div class="para">を証明せよ。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-chapter1-4-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="exercises-chapter1-4-2-1-1">
+<li id="exercises-chapter1-4-2-1-1-1">
+<div class="para logical" id="exercises-chapter1-4-2-1-1-1-1">
+<div class="para">内包表記で書き下す。</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{-1}(f(X))=\{a\in A; \forall x\in f(X), f(a)=f(x)\}=X
+\end{equation*}
+</div>
+<div class="para">である。これを問題に適用して<span class="process-math">\(f^{-1}(f(f^{-1}(S)))=f^{-1}(S)\)</span>を得る。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.a"><a href="#exercises-chapter1-4-2-1-1-1" title="Copy heading and permalink for Item 2.6.4.a" aria-label="Copy heading and permalink for Item 2.6.4.a">🔗</a></div>
+</li>
+<li id="exercises-chapter1-4-2-1-1-2">
+<div class="para logical" id="exercises-chapter1-4-2-1-1-2-1">
+<ol class="lower-roman" id="exercises-chapter1-4-2-1-1-2-1-1">
+<li id="exercises-chapter1-4-2-1-1-2-1-1-1">
+<div class="para" id="exercises-chapter1-4-2-1-1-2-1-1-1-1">
+<span class="process-math">\(\implies: f\)</span>が全射なら<span class="process-math">\(s\in S\)</span>に対して<span class="process-math">\(a\in Aがあり、f(a)=s\)</span>である。よって<span class="process-math">\(s\in f(f^{-1}(S))\)</span>である。逆に<span class="process-math">\(s\in f(f^{-1}(S))\)</span>に対しても<span class="process-math">\(f(a)=sとなるa\in A\)</span>があり、<span class="process-math">\(a\in f^{-1}(S), f(a)=s\in S\)</span>なので等号がわかる。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-2-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.b.i"><a href="#exercises-chapter1-4-2-1-1-2-1-1-1" title="Copy heading and permalink for Item 2.6.4.b.i" aria-label="Copy heading and permalink for Item 2.6.4.b.i">🔗</a></div>
+</li>
+<li id="exercises-chapter1-4-2-1-1-2-1-1-2">
+<div class="para" id="exercises-chapter1-4-2-1-1-2-1-1-2-1">
+<span class="process-math">\(\impliedby: f(f^{-1}(S))=S\)</span>は空でないと仮定してよい(空なら命題が意味をもたない)。<span class="process-math">\(f(\emptyset)=\emptyset\)</span>にしかなり得ないことを考えると、逆像が空ではないので全射性がわかる。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-2-1-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.b.ii"><a href="#exercises-chapter1-4-2-1-1-2-1-1-2" title="Copy heading and permalink for Item 2.6.4.b.ii" aria-label="Copy heading and permalink for Item 2.6.4.b.ii">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.6.4.b"><a href="#exercises-chapter1-4-2-1-1-2" title="Copy heading and permalink for Item 2.6.4.b" aria-label="Copy heading and permalink for Item 2.6.4.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.4.1"><a href="#exercises-chapter1-4-2" title="Copy heading and permalink for Answer 2.6.4.1" aria-label="Copy heading and permalink for Answer 2.6.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.4"><a href="#exercises-chapter1-4" title="Copy heading and permalink for Exercise 2.6.4" aria-label="Copy heading and permalink for Exercise 2.6.4">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-5-1-1">well-definednessが問題になる状況を挙げよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="exercises-chapter1-5-2-1">例えば<span class="process-math">\(f: \mathbb Q \to \mathbb Z\)</span>(<span class="process-math">\(\mathbb Z\)</span>は整数のこと)で、有理数<span class="process-math">\(\frac{a}{b}\)</span>の分母と分子の和を返す写像として定義したいとしよう。<span class="process-math">\(\frac{1}{2}=\frac{2}{4}=\frac{3}{6}=\cdots\)</span>なので、この<span class="process-math">\(f\)</span>は1つの有理数に対して無数に像ができることになる。これはwell-definednessが問題になる例の一つである。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.5.1"><a href="#exercises-chapter1-5-2" title="Copy heading and permalink for Answer 2.6.5.1" aria-label="Copy heading and permalink for Answer 2.6.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.5"><a href="#exercises-chapter1-5" title="Copy heading and permalink for Exercise 2.6.5" aria-label="Copy heading and permalink for Exercise 2.6.5">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-6-1-1">
+<span class="process-math">\(|A|=|A'|かつ|B|=|B'|\)</span>ならば<span class="process-math">\(|A\times B|=|A' \times B'|\)</span>であることを示せ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-chapter1-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="exercises-chapter1-6-2-1">全単射を構成することを考えよう。直積というのは順序対の全体であることを思い出して、命題2.2.2の証明での構成を参考にせよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 2.6.6.1"><a href="#exercises-chapter1-6-2" title="Copy heading and permalink for Hint 2.6.6.1" aria-label="Copy heading and permalink for Hint 2.6.6.1">🔗</a></div>
+</div></details><details id="exercises-chapter1-6-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="exercises-chapter1-6-3-1">
+<span class="process-math">\(a\in A, b\in B\)</span>に対して、<span class="process-math">\(A\times B\)</span>の元は<span class="process-math">\((a,b)\)</span>という形になっているのであった。仮定より、全単射<span class="process-math">\(f:A\to A', g:B\to B'\)</span>が与えられている。 <span class="process-math">\(\pi: A\times B\)</span>を<span class="process-math">\((a, b)\mapsto (f(a), g(b))\)</span>で定義すれば、これは明らかに全単射である。実際、<span class="process-math">\(\pi(a,b)\neq \pi(a',b')\)</span>なら<span class="process-math">\((f(a),g(b))\neq (f(a'),g(b'))\)</span>であり、 <span class="process-math">\(f,g\)</span>は単射でもあるので<span class="process-math">\(\pi\)</span>の単射性が成り立つ。全射性も同様にして、<span class="process-math">\(f,g\)</span>が全射であることから、<span class="process-math">\(\pi\)</span>の逆像が空になる元は存在しないので全射性も言える。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.6.1"><a href="#exercises-chapter1-6-3" title="Copy heading and permalink for Answer 2.6.6.1" aria-label="Copy heading and permalink for Answer 2.6.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 2.6.6"><a href="#exercises-chapter1-6" title="Copy heading and permalink for Exercise 2.6.6" aria-label="Copy heading and permalink for Exercise 2.6.6">🔗</a></div></article><article class="exercise exercise-like" id="exercises-chapter1-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-chapter1-7-1-1">仮定<span class="process-math">\(\implies\)</span>結論 という命題において、仮定が誤っているならば、数学で通常用いる論理体系では結論は常に真である。例えば部屋にスマホがあるなら、その電源は切れているという命題を考える。 この状況で仮定が偽、つまり部屋にスマホが存在しない状況を考えれば、電源の入ったスマートフォンは部屋に存在しない。したがってこの命題は真となる。 この現象を「空虚な真」と呼ぶ。これを使って、「空集合が任意の集合の部分集合である」ことを証明せよ。<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exercises-chapter1-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-chapter1-7-2-1">
+<div class="para">空集合から元は取れないので、部分集合の定義である</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x\in\emptyset \implies A
+\end{equation*}
+</div>
+<div class="para">という論理式は空虚な真により常に真である。</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-chapter1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.6.7.1"><a href="#exercises-chapter1-7-2" title="Copy heading and permalink for Answer 2.6.7.1" aria-label="Copy heading and permalink for Answer 2.6.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 2.6.7"><a href="#exercises-chapter1-7" title="Copy heading and permalink for Exercise 2.6.7" aria-label="Copy heading and permalink for Exercise 2.6.7">🔗</a></div></article><div class="autopermalink" data-description="Exercises 2.6"><a href="#exercises-chapter1" title="Copy heading and permalink for Exercises 2.6" aria-label="Copy heading and permalink for Exercises 2.6">🔗</a></div></section><div class="autopermalink" data-description="Section 2.6: 第1章の演習問題と略解"><a href="#exercise-of-chapter1" title="Copy heading and permalink for Section 2.6: 第1章の演習問題と略解" aria-label="Copy heading and permalink for Section 2.6: 第1章の演習問題と略解">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="cardinality-of-sets.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="group-theory.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
