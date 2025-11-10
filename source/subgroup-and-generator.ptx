@@ -48,4 +48,24 @@
         </proof>
     </proposition>
 
+    <p>
+        <m>G</m>を群、<m>S\subset G</m>を部分集合とする。<m>S</m>の元を<m>G</m>内で<m>x^{\pm 1}_1 \dots  x^{\pm 1}_n</m>という形に自由に掛け合わせたとき、その全体を<m>(S)</m>と書き、<m>S</m>の元による<term>語(word)</term>1という。なお、<m>n=0</m>なら<m>1_G</m>を表すとする。
+    </p>
+
+    <proposition xml:id="prop-generated-subgroup">
+        <statement>
+            <p>
+                <m>(S)</m>は<m>G</m>の部分群である。この<m>(S)</m>は<m>S</m>を含む最小の部分群である。
+            </p>
+        </statement>
+        <proof>
+            <p>
+                <m>n=0</m>の場合により、<m>1_G\in (S)</m>である。<m>x,y\in (S)</m>をとると<m>x=x^{\pm 1}_1x^{\pm 1}_2\cdots x^{\pm 1}_n, y=x^{\pm 1}_{n+1}\cdots x^{\pm 1}_m</m>であり、<m>x-y=xy^{-1}</m>も語である。よって<m>(S)</m>は<m>G</m>の部分群である。
+            </p>
+            <p>
+                最小性は明らかである。実際、題意は「部分群<m>H\in G</m>が<m>S\subset H</m>なら、<m>(S)\subset H</m>である」と言い換えることができる。そのような<m>H</m>の存在を仮定する。<m>x\in (S)</m>をとる。<m>x</m>は<m>S</m>の元の積だから、同じ演算によって<m>H</m>の元となる。したがって題意が示された。
+            </p>
+        </proof>
+    </proposition>
+
 </section>
