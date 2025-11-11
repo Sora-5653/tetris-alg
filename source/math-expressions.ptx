@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="sec-math-expressions">
+    <title>数学的な言い回し</title>
+
+    <p>
+        大学以上の数学では、日常的にあまり使われない奇異な言い回しが頻出する。そのようなものを手軽に探すため、五十音順で対応を示す。
+    </p>
+
+    <subsection xml:id="subsec-agyou">
+        <title>あ行</title>
+
+        <p>
+            <ol>
+                <li>
+                    <example>
+                        <title>明らか</title>
+                        
+                        
+                    <p>
+                        <term>明らか, 自明(Obvious, Clear)</term>
+                    </p>
+                    <p>
+                        本来は「誰がみてもすぐに分かるさま」を意味する言葉であるが、大学数学、とくに修士以降の本では「考えればすぐにわかる」とか、「読者の演習問題として残す」というニュアンスを含むことが多くなる。甚だ身勝手な使い方である。だがもしこの言葉を見たら、「ふーん、そうなんだ」で終わらず、自分で考える癖をつけていただきたい。
+                    </p>
+                    <p>
+                        (類) 容易
+                    </p>
+                </example>
+                </li>
+
+                <li>
+                    <example>
+                        <title>一般化</title>
+                        
+                        <p>
+                            <term>一般化(generalization)</term>
+                        </p>
+                        <p>
+                            ある命題や定義を包含する枠組みで、同様の結果を得ること。例えばピタゴラスの定理(<m>a^2+b^2=c^2</m>)の一般化は余弦定理(<m>a^2+b^2-2ab\cos(\gamma)=c^2</m>)であり、圏でのlimit/colimitは集合のDisjoin union/直積の一般化である、等。
+                        </p>
+                        <p>
+                            (対) 特殊化(specialization)
+                        </p>
+                    </example>
+                </li>
+
+                <li>
+                    <example>
+                        <title>一般性を失わない, 仮定してよい</title>
+                        
+                        
+                    <p>
+                        <term>一般性を失わない(without loss of generality), 〜と仮定してよい(one(we) may assume 〜)</term>
+                    </p>
+                    <p>
+                        命題の証明において、同様だが複数のケースが考えられる場合、ある仮定Aをおいて状況を簡単にして、それで証明をし、残りのケースもAでの場合を使って示せる場合、「Aと仮定しても一般性を失わない」として議論が省略される。「他の場合も示せる」という状況は、例えば実数<m>x,y</m>についてなにがしかの命題Pを示したいとき、<m>x\leq y</m>とおくとその場合だけ証明できたとする。<m>x</m>と<m>y</m>を入れ替えると<m>y\leq x</m>の場合も成り立つので、この仮定をおいて一般性を失っていないと言える。これも出てきたら自分で示せるとなおよい。
+                    </p>
+                    </example>
+                </li>
+            </ol>
+        </p>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-kagyou">
+        <title>か行</title>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>〜が存在する</title>
+
+                            <p>
+                                <term>〜が存在する(〜exists, there is(are) 〜)</term>
+                            </p>
+                            
+                            <p>
+                                文字通り「〜がある」という意味。ただし、それがただ一つであるとは<term>限らない</term>。複数個でもよい。
+                            </p>
+                            
+                        </example>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <example>
+                            <title>系</title>
+                            
+                            <p>
+                                <term>系(Corollary)</term>
+                            </p>
+                            <p>
+                                命題や定理が証明されたのち、それからただちに導かれるもの。著者によっては、加えて「興味深い命題」というニュアンスを付加していることもある。
+                            </p>
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-sagyou">
+        <title>さ行</title>
+        
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>自然な</title>
+                            
+                            <p>
+                                <term>自然な(natural, canonical)</term>
+                            </p>
+
+                            <p>
+                                恣意的な選択を含まず、考えているものから一意的に、あるいは標準的に定まる対象。圏論的にはより厳密に定義される。難しいことを書いたが、要は「最も標準的で美しい対応」をなしているものとして認識しておけばよい。これは数学的感覚によるものが大きいので、実際に自然な対象と呼ばれるものたち(包含写像など)を見てみるのがよい。
+                            </p>
+
+                            <p>
+                                例: 群<m>G</m>から剰余群<m>G/N</m>への自然な全射<m>\pi: G\to G/N; g\mapsto [g]</m>。
+                            </p>
+
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+    </subsection>
+
+    <subsection xml:id="subsec-tagyou">
+        <title>た行</title>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>定理</title>
+                            
+                            <p>
+                                <term>定理(Theorem)</term>
+                            </p>
+                            <p>
+                                命題のうち、特に理論的に重要であるものや、便利であるもの。このあたりの命名規則に明確な線引きは存在せず、分野によって異なる暗黙の了解によって振り分けられるのが基本だが、著者の裁量で変化しうる。
+                            </p>
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-nagyou">
+        <title>な行</title>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>任意の</title>
+                            
+                            <p>
+                                <term>任意の(any〜)</term>
+                            </p>
+                            <p>
+                                すべての〜 という意味。
+                            </p>
+                            <p>
+                                (対) 〜が存在する
+                            </p>
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-hagyou">
+        <title>は行</title>
+        
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>補題</title>
+
+                            <p>
+                                <term>補題(Lemma)</term>
+                            </p>
+                            <p>
+                                命題のうち、便利であったり、のちの証明に利用されるもの。「補助命題」の略であり、一見すると重要度が低そうだが、実情はそれと対照的である。
+                            </p>
+                            
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+    </subsection>
+
+    <subsection xml:id="subsec-magyou">
+        <title>ま行</title>
+        
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <example>
+                            <title>矛盾</title>
+                            
+                            <p>
+                                
+                            </p>
+                        </example>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <example>
+                            <title>命題</title>
+                            
+                            <p>
+                                <term>命題(Proposition)</term>
+                            </p>
+                            <p>
+                                仮定<m>\implies</m>結論 という形の文。
+                            </p>
+                        </example>
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+    </subsection>
+
+    <subsection xml:id="subsec-yagyou">
+        <title>や行</title>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-ragyou">
+        <title>ら行</title>
+        
+    </subsection>
+
+    <subsection xml:id="subsec-wagyou">
+        <title>わ行</title>
+        
+    </subsection>
+
+    </chapter>

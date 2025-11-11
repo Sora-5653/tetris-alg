@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<part xml:id="part-appendix" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>付録</title>
+    
+    <introduction>
+        <p>
+            ここでは、本文中で紹介できなかった種々の事柄を述べる。
+        </p>
+    </introduction>
+
+    <xi:include href="./math-expressions.ptx" />
+
+</part>
