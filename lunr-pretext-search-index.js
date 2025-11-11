@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "部分群と生成元",
-  "body": " 部分群と生成元  何かしらの群 を調べるときに、まず初めから について何か考察するのは、目処が立ちにくい。 その代わり、 の構造を保持する、より小さい群を見るというのが常套手段である。したがって、次に定義する部分群の概念は基本的である。     を群とする。部分集合 が以下を満たすとき、 を の 部分群(subgroup) であるという。         なら      なら      上に挙げた条件(2),(3)を直接確認するよりも、 という形で一度に確認する方が少し楽な場面もある。       を群、 をその部分群とする。このとき、 も の部分群である。     なので、明らかに である。 をとると、これは に入っている。したがって、 である。     を群、 を部分集合とする。 の元を 内で という形に自由に掛け合わせたとき、その全体を と書き、 の元による 語(word) 1という。なお、 なら を表すとする。     は の部分群である。この は を含む最小の部分群である。     の場合により、 である。 をとると であり、 も語である。よって は の部分群である。  最小性は明らかである。実際、題意は「部分群 が なら、 である」と言い換えることができる。そのような の存在を仮定する。 をとる。 は の元の積だから、同じ演算によって の元となる。したがって題意が示された。    "
+  "body": " 部分群と生成元  何かしらの群 を調べるときに、まず初めから について何か考察するのは、目処が立ちにくい。 その代わり、 の構造を保持する、より小さい群を見るというのが常套手段である。したがって、次に定義する部分群の概念は基本的である。     を群とする。部分集合 が以下を満たすとき、 を の 部分群(subgroup) であるという。         なら      なら      上に挙げた条件(2),(3)を直接確認するよりも、 という形で一度に確認する方が少し楽な場面もある。       を群、 をその部分群とする。このとき、 も の部分群である。     なので、明らかに である。 をとると、これは に入っている。したがって、 である。     を群、 を部分集合とする。 の元を 内で という形に自由に掛け合わせたとき、その全体を と書き、 の元による 語(word) 1という。なお、 なら を表すとする。     は の部分群である。この は を含む最小の部分群である。     の場合により、 である。 をとると であり、指数法則から も語である。よって は の部分群である。  最小性は明らかである。実際、題意は「部分群 が なら、 である」と言い換えることができる。そのような の存在を仮定する。 をとる。 は の元の積だから、同じ演算によって の元となる。したがって題意が示された。    "
 },
 {
   "id": "def-subgroup",
@@ -439,7 +439,160 @@ var ptx_lunr_docs = [
   "type": "Proposition",
   "number": "3.3.3",
   "title": "",
-  "body": "   は の部分群である。この は を含む最小の部分群である。     の場合により、 である。 をとると であり、 も語である。よって は の部分群である。  最小性は明らかである。実際、題意は「部分群 が なら、 である」と言い換えることができる。そのような の存在を仮定する。 をとる。 は の元の積だから、同じ演算によって の元となる。したがって題意が示された。   "
+  "body": "   は の部分群である。この は を含む最小の部分群である。     の場合により、 である。 をとると であり、指数法則から も語である。よって は の部分群である。  最小性は明らかである。実際、題意は「部分群 が なら、 である」と言い換えることができる。そのような の存在を仮定する。 をとる。 は の元の積だから、同じ演算によって の元となる。したがって題意が示された。   "
+},
+{
+  "id": "subsec-agyou",
+  "level": "1",
+  "url": "subsec-agyou.html",
+  "type": "Subsection",
+  "number": "4.1",
+  "title": "あ行",
+  "body": " あ行      明らか   明らか, 自明(Obvious, Clear)   本来は「誰がみてもすぐに分かるさま」を意味する言葉であるが、大学数学、とくに修士以降の本では「考えればすぐにわかる」とか、「読者の演習問題として残す」というニュアンスを含むことが多くなる。甚だ身勝手な使い方である。だがもしこの言葉を見たら、「ふーん、そうなんだ」で終わらず、自分で考える癖をつけていただきたい。  (類) 容易      一般化   一般化(generalization)   ある命題や定義を包含する枠組みで、同様の結果を得ること。例えばピタゴラスの定理( )の一般化は余弦定理( )であり、圏でのlimit\/colimitは集合のDisjoin union\/直積の一般化である、等。  (対) 特殊化(specialization)      一般性を失わない, 仮定してよい   一般性を失わない(without loss of generality), 〜と仮定してよい(one(we) may assume 〜)   命題の証明において、同様だが複数のケースが考えられる場合、ある仮定Aをおいて状況を簡単にして、それで証明をし、残りのケースもAでの場合を使って示せる場合、「Aと仮定しても一般性を失わない」として議論が省略される。「他の場合も示せる」という状況は、例えば実数 についてなにがしかの命題Pを示したいとき、 とおくとその場合だけ証明できたとする。 と を入れ替えると の場合も成り立つので、この仮定をおいて一般性を失っていないと言える。これも出てきたら自分で示せるとなおよい。      "
+},
+{
+  "id": "subsec-agyou-2",
+  "level": "2",
+  "url": "subsec-agyou.html#subsec-agyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "明らか, 自明(Obvious, Clear) 一般化(generalization) 一般性を失わない(without loss of generality), 〜と仮定してよい(one(we) may assume 〜) "
+},
+{
+  "id": "subsec-kagyou",
+  "level": "1",
+  "url": "subsec-kagyou.html",
+  "type": "Subsection",
+  "number": "4.2",
+  "title": "か行",
+  "body": " か行       〜が存在する   〜が存在する(〜exists, there is(are) 〜)   文字通り「〜がある」という意味。ただし、それがただ一つであるとは 限らない 。複数個でもよい。        系   系(Corollary)   命題や定理が証明されたのち、それからただちに導かれるもの。著者によっては、加えて「興味深い命題」というニュアンスを付加していることもある。       "
+},
+{
+  "id": "subsec-kagyou-2",
+  "level": "2",
+  "url": "subsec-kagyou.html#subsec-kagyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "〜が存在する(〜exists, there is(are) 〜) 限らない 系(Corollary) "
+},
+{
+  "id": "subsec-sagyou",
+  "level": "1",
+  "url": "subsec-sagyou.html",
+  "type": "Subsection",
+  "number": "4.3",
+  "title": "さ行",
+  "body": " さ行       自然な   自然な(natural, canonical)   恣意的な選択を含まず、考えているものから一意的に、あるいは標準的に定まる対象。圏論的にはより厳密に定義される。難しいことを書いたが、要は「最も標準的で美しい対応」をなしているものとして認識しておけばよい。これは数学的感覚によるものが大きいので、実際に自然な対象と呼ばれるものたち(包含写像など)を見てみるのがよい。  例: 群 から剰余群 への自然な全射 。       "
+},
+{
+  "id": "subsec-sagyou-2",
+  "level": "2",
+  "url": "subsec-sagyou.html#subsec-sagyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "自然な(natural, canonical) "
+},
+{
+  "id": "subsec-tagyou",
+  "level": "1",
+  "url": "subsec-tagyou.html",
+  "type": "Subsection",
+  "number": "4.4",
+  "title": "た行",
+  "body": " た行       定理   定理(Theorem)   命題のうち、特に理論的に重要であるものや、便利であるもの。このあたりの命名規則に明確な線引きは存在せず、分野によって異なる暗黙の了解によって振り分けられるのが基本だが、著者の裁量で変化しうる。       "
+},
+{
+  "id": "subsec-tagyou-2",
+  "level": "2",
+  "url": "subsec-tagyou.html#subsec-tagyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "定理(Theorem) "
+},
+{
+  "id": "subsec-nagyou",
+  "level": "1",
+  "url": "subsec-nagyou.html",
+  "type": "Subsection",
+  "number": "4.5",
+  "title": "な行",
+  "body": " な行       任意の   任意の(any〜)   すべての〜 という意味。  (対) 〜が存在する       "
+},
+{
+  "id": "subsec-nagyou-2",
+  "level": "2",
+  "url": "subsec-nagyou.html#subsec-nagyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "任意の(any〜) "
+},
+{
+  "id": "subsec-hagyou",
+  "level": "1",
+  "url": "subsec-hagyou.html",
+  "type": "Subsection",
+  "number": "4.6",
+  "title": "は行",
+  "body": " は行       補題   補題(Lemma)   命題のうち、便利であったり、のちの証明に利用されるもの。「補助命題」の略であり、一見すると重要度が低そうだが、実情はそれと対照的である。       "
+},
+{
+  "id": "subsec-hagyou-2",
+  "level": "2",
+  "url": "subsec-hagyou.html#subsec-hagyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "補題(Lemma) "
+},
+{
+  "id": "subsec-magyou",
+  "level": "1",
+  "url": "subsec-magyou.html",
+  "type": "Subsection",
+  "number": "4.7",
+  "title": "ま行",
+  "body": " ま行       矛盾          命題   命題(Proposition)   仮定 結論 という形の文。       "
+},
+{
+  "id": "subsec-magyou-2",
+  "level": "2",
+  "url": "subsec-magyou.html#subsec-magyou-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "命題(Proposition) "
+},
+{
+  "id": "subsec-yagyou",
+  "level": "1",
+  "url": "subsec-yagyou.html",
+  "type": "Subsection",
+  "number": "4.8",
+  "title": "や行",
+  "body": " や行  "
+},
+{
+  "id": "subsec-ragyou",
+  "level": "1",
+  "url": "subsec-ragyou.html",
+  "type": "Subsection",
+  "number": "4.9",
+  "title": "ら行",
+  "body": " ら行  "
+},
+{
+  "id": "subsec-wagyou",
+  "level": "1",
+  "url": "subsec-wagyou.html",
+  "type": "Subsection",
+  "number": "4.10",
+  "title": "わ行",
+  "body": " わ行  "
 },
 {
   "id": "backmatter-2",
