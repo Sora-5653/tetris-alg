@@ -49,7 +49,7 @@
     </proposition>
 
     <p>
-        <m>G</m>を群、<m>S\subset G</m>を部分集合とする。<m>S</m>の元を<m>G</m>内で<m>x^{\pm 1}_1 \dots  x^{\pm 1}_n</m>という形に自由に掛け合わせたとき、その全体を<m>(S)</m>と書き、<m>S</m>の元による<term>語(word)</term>1という。なお、<m>n=0</m>なら<m>1_G</m>を表すとする。
+        <m>G</m>を群、<m>S\subset G</m>を部分集合とする。<m>S</m>の元を<m>G</m>内で<m>x^{\pm 1}_1 \dots  x^{\pm 1}_n</m>という形に自由に掛け合わせたとき、その全体を<m>(S)</m>と書き、<m>S</m>の元による<term>語(word)</term>という。なお、<m>n=0</m>なら<m>1_G</m>を表すとする。
     </p>
 
     <proposition xml:id="prop-generated-subgroup">
