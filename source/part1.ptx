@@ -59,6 +59,8 @@
 
     <xi:include href="./subgroup-and-generator.ptx" />
 
+    <xi:include href="./hom-and-isom.ptx" />
+
   </chapter>
 
 

@@ -4,7 +4,148 @@
     <title>準同型写像</title>
     
     <p>
-        群と同じくらい重要なのが、その間に走る「準同型」の概念である。群<m>G_1, G_2</m>の間にこの準同型が走っていれば、それらはほとんど同じ群であると思える。もっと強く、「同型」があれば、<m>G_1,G_2</m>は代数的には同じものとみなしてよい。既知の群から全く未知の群へ準同型や同型が構成できれば、
+        群と同じくらい重要なのが、その間に走る「準同型」の概念である。群<m>G_1, G_2</m>の間にこの準同型が走っていれば、それらはほとんど同じ群であると思える。
+        もっと強く、「同型」があれば、<m>G_1,G_2</m>は代数的には同じものとみなしてよい。既知の群から全く未知の群へ準同型や同型が構成できれば、その未知の群を直接触らなくとも構造を調べることができる。
+    </p>
+    
+    <definition xml:id="def-homomorphism">
+        <statement>
+            <p>
+                <m>G_1,G_2</m>を群、<m>\phi: G_1\to G_2</m>を写像とする。<m>\phi</m>は次を満足するとき、群の<term>準同型写像(homomorphism)</term>という。「準同型」と略したりする。:
+            </p>
+                
+            <p>    
+                積は分解する。つまり、<m>\phi (xy)=\phi (x)\phi (y)</m>がすべての<m>x_1,x_2 \in G_1</m>について成り立つ。
+            </p>
+        </statement>
+    </definition>
+
+    <proposition xml:id="prop-hom-and-unit">
+        <statement>
+            <p>
+                <m>G_1\to G_2</m>が準同型なら、<m>\phi (1_{G_1})=1_{G_2}</m>である。つまり、準同型は単位元を単位元に送る。
+            </p>
+        </statement>
+        <proof>
+            <p>
+                <m>1_{G_1}\in G_1</m>をとる。<m>\phi (1_{G_1})=\phi (1_{G_1}1_{G_1})=\phi(1_{G_1})\phi (1_{G_1}))</m>なので、これは<m>G_2</m>の単位元である。
+            </p>
+        </proof>
+    </proposition>
+
+    <definition xml:id="def-isom">
+        <statement>
+            <p>
+                <m>\phi: G_1\to G_2</m>を準同型とする。
+                <ol>
+                    <li>
+                        <p>
+                            <m>\phi</m>が逆写像を持ち、それも準同型であるとき、<term>同型写像(isomorphism)</term>であるという。このとき<m>G_1,G_2</m>は<term>同型(isomorphic)</term>であるといい、<m>G_1 \cong G_2</m>と書く。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\ker (\phi):=\{x; x\in G_1, \phi(x)=1_{G_2}\}</m>と定義し、準同型の<term>核(kernel)</term>と呼ぶ。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\mathrm{Im} (\phi):= \{\phi(x); x\in G_1\}</m>と書き、準同型の<term>像(image)</term>
+                        </p>
+                    </li>
+                </ol>    
+            </p>
+        </statement>
+    </definition>
+
+    <proposition xml:id="prop-hom-basic">
+        <statement>
+            <p>
+                <m>\phi :G_1\to G_2</m>を群の準同型とする。
+                <ol>
+                    <li>
+                        <p>
+                            <m>\phi (x^{-1})=\phi (x)^{-1}</m>である。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\ker (\phi), \mathrm{Im}</m>はそれぞれ<m>G_1,G_2</m>の部分群である。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <proof>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>1_{G_2}=\phi (1_{G_1})=\phi (x^{-1}x)=\phi (x)\phi (x^{-1})</m>なので、<m>\phi (x)</m>に<m>\phi (x^{-1})</m>をかけて<m>1</m>になるということは、<m>\phi (x^{-1})</m>が<m>\phi (x)</m>の逆元であることを意味する。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            両者ともに単位元の存在は自明である。
+                        </p>
+                        <p>
+                            まず<m>\ker</m>の場合を示す。<m>x,y\in \ker \phi</m>をとる。<m>\phi(xy^{-1})=\phi (x)\phi (y^{-1})=\phi (x)\phi (y)^{-1}=1\bullet 1^{-1}=1</m>。したがって<m>xy{^1}</m>は<m>\ker</m>の元である。
+                        </p>
+                        <p>
+                            次に<m>\mathrm{Im}</m>の場合を示そう。<m>x,y\in \mathrm{Im} \phi</m>をとる。定義より、<m>\phi(a)=x, \phi(b)=y</m>となる<m>a,b</m>が存在する。<m>xy^{-1}=\phi(a)\phi(b^{-1})=\phi(ab^{-1})</m>である。<m>ab^{-1}</m>は<m>G_1</m>の元であるため、題意が示された。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </proof>
+    </proposition>
+
+    <p>
+        線型空間の間の写像を線型写像というのだったが、それは群として見ると準同型をなしている。ほかにも簡単な準同型の例をあげよう。
     </p>
 
+    <example>
+        <title>指数関数</title>
+        
+        
+        <statement>
+            <p>
+                <m>e^xe^y=e^{x+y}</m>なので、指数関数は実数から正の実数への準同型である。
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <title>トーラスと被覆写像</title>
+        
+        
+        <statement>
+            <p>
+                ※「複素数」が何かわからない人はOgonek:Macron氏のnoteを参照。
+            </p>
+            <p>
+                絶対値が1の複素数の集合を<m>S^1</m>とおく。これは通常の複素数の積により群となる。直積<m>S^1\times S^1</m>を考えると、これは円周<m>S^1</m>を、別の円周<m>S^1</m>にそって配置した形、つまりドーナッツ型となる。これを<m>T</m>とおく。
+            </p>
+            <p>
+                まず<m>\phi: \mathbb R\to S^1</m>を与える。<m>e^{i\theta}</m>で単位円周上の任意の動径をもつ点を表せるから、<m>\phi(\theta)=e^{i\theta}</m>とすれば、先ほどの例よりこれは準同型である。この準同型単体でも、実数<m>\mathbb R</m>の演算が円周上の点の積に保存されていることがわかる。<m>f:\mathbb R\times \mathbb R \to T</m>を<m>(\theta_1, \theta_2)\mapsto (\phi(\theta_1),\phi(\theta_2))</m>とすることで準同型になる。
+            </p>
+            <p>
+                とくに、<m>h: \mathbb R\to S^1</m>を、<m>h(t):= \cos 2\pi t + i\sin 2\pi t</m>と定めると、<m>h^{-1}((cos \theta, sin \theta))=\dfrac{\theta}{2\pi}+m</m>(<m>m</m>は整数)となる。<m>t</m>を動かすと、写像の軌跡が円周を何度もたどり、被覆するような形になっているのが見て取れるだろう。この写像は実数直線<m>\mathbb R</m>を「変形」し、円周の上に重ねる写像と捉えることができる。代数トポロジーという分野ではこの状況を、<m>\mathbb R</m>が円周<m>S^1</m>の<term>被覆空間(covering space)</term>であるといい、<m>h</m>を<term>被覆写像(covering map)</term>と呼ぶ。とくにこの場合の<m>\mathbb R</m>は普遍被覆という性質のよい被覆空間となっている。被覆空間の理論では下で紹介する自己同型群を空間の変換全体のなす群と捉え、豊富な理論が展開される。
+            </p>
+        </statement>
+    </example>
+    
+    <p>
+        テトリスには必要ないが、重要な概念として自己同型群をあげておく。
+    </p>
+
+    <definition>
+        <title>自己同型群</title>
+        
+        <statement>
+            <p>
+                <m>G</m>を群とするとき、同型<m>G\to G</m>全体の集合を<m>\mathrm{Aut} (G)</m>と書く。これは積を同型の合成<m>\phi \circ \psi</m>とし、単位元を<m>\mathrm{id}_G</m>とすることで群となる。これを<term>自己同型群(automorphism group)</term>という。
+            </p>
+        </statement>
+    </definition>
 </section>
