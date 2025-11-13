@@ -61,6 +61,8 @@
 
     <xi:include href="./hom-and-isom.ptx" />
 
+    <xi:include href="./quot-grp.ptx" />
+
   </chapter>
 
 

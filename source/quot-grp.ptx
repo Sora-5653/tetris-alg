@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-quot-grp" xmlns:xi ="http://w3.org/2001/XInclude">
+    <title>剰余群</title>
+
+    <p>
+        なんらかの対象を、別の対象と同じものとしてみなしたいという意識は、数学の至る所に登場する。それは群論においても同様である。この節では、集合の元同士にある種の関係を定義し、その集合を互いに素なものに分割する「同値関係」という概念を学ぶ。
+    </p>
+    
+    <p>
+        一般の同値関係を考える前に、mod演算を復習する。より丁寧で詳しい解説は<url href="">Ogonek:Macron氏のnote</url>を参照のこと。
+    </p>
+
+    <p>
+        正の整数<m>n</m>をとる。<m>x,y\in \mathbb Z</m>に関して、<m>x-y</m>が<m>n</m>で割り切れるとき、<m>x \equiv y \pmod n</m>と書くのだった。この記号で無限環である<m>\mathbb Z</m>の元をあまりの概念を用いてグループ分けし、構造を大幅に簡略化していることがわかるであろう。
+    </p>
+    <p>
+        mod演算はこのように、状況に応じて整数の構造を簡略化することで、より高度な概念を簡単に考えられる定式化である。「LTEの補題」はその典型例であり、数論の「楕円曲線論」という分野で使用されることがある。そのほか、いわゆる数学オリンピックの整数問題において、"Vieta Jumping"などの手法とあわせて絶大な威力を発揮し、問題と出場者のレベルの上昇を起こしたようである。
+    </p>
+
+    <p>
+        今見たように、mod演算での整数の分割は豊富な理論をもつ。これを一般の群やその他の代数構造に拡張するため、mod演算の持つ性質を取り出し、同値関係の概念を定義する。
+    </p>
+
+    <subsection xml:id="subsec-equiv-relation">
+        <title>同値関係</title>
+
+    <definition xml:id="def-equi-relation">
+        <statement>
+            <p>
+            <ol>
+                <li>
+                    <p>
+                集合A上の元同士の関係<m>\sim</m>が次を満たすとき、<m>\sim</m>を<m>A</m>の<term>同値関係(equivalence relation)</term>という。
+                <ol>
+                    <li>
+                        <title>(反射律)</title>
+                        
+                        <p>
+                            <m>a \sim a</m>
+                        </p>
+                    </li>
+                    <li>
+                        <title>(対称律)</title>
+                        
+                        <p>
+                           <m>a \sim b \implies b \sim a</m> 
+                        </p>
+                    </li>
+                    <li>
+                        <title>(推移律)</title>
+                        
+                        <p>
+                            <m>a \sim b, b\sim c \implies a \sim c</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            </li>
+            <li>
+                <p>
+                    <m>A</m>の同値関係<m>\sim</m>と任意の<m>x</m>に対して、集合<m>\{y\in A; y\sim x\}</m>を<m>x</m>の<term>同値類(equivalence class)</term>という。
+                </p>
+            </li>
+        </ol>
+            </p>
+        </statement>
+    </definition>
+
+    <remark>
+        <p>
+            明らかに、modによる整数の分割は同値関係である。つまり、関係<m>x\equiv y \pmod n</m>は上の定義の条件を全て満たす。実際、<ol>
+                <li>
+                    <p>
+                        反射律と対称律は明らか。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x-y=nk, y-z=nl \left(k,l\in \mathbb Z\right)</m>と書けたとする。<m>x-z=x-y+y-z=nk-nl=n(k-l)</m>である。
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </remark>
+
+    <p>
+        次に、さきほど見た「整数の分割」を、任意の集合に対して一般化する。
+    </p>
+
+    <definition xml:id="def-quot-set">
+        <statement>
+            <p>
+                <m>S</m>を集合、<m>\sim</m>をその上の同値関係とする。
+                <ol>
+                    <li>
+                        <p>
+                            <m>\sim</m>によって作られた同値類の全体を<m>S/\sim</m>と書き、<m>S</m>の<m>\sim</m>による<term>商(quotient)</term>という。<m>S</m>の各元に対して<m>S/\sim</m>の集合が1つ対応する。これを<m>S</m>から<m>S/\sim</m>への<term>自然な写像(natural map)</term>という。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>S/\sim</m>の元<m>C</m>に対し、<m>x\in C</m>となる元を<m>C</m>の代表元という。これは同値類をラベリングするだけの元なので適当に選んでよい。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>S</m>の部分集合が各同値類の代表元をちょうど1つずつ含むなら、それを<m>\sim</m>の<term>完全代表系(representative)</term>という。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </definition>
+
+    <p>
+        選択公理(第2章4節)より、すべての同値類から代表元を1つずつ選ぶことが可能である。よって、ZFCでは完全代表系は常に存在する。
+    </p>
+
+</subsection>
+
+<subsection xml:id="subsec-quot-group">
+    <title>剰余類</title>
+
+    <p>
+        群の剰余類を定義しよう。まだこれは剰余群の定義ではない。
+    </p>
+
+    <definition xml:id="def-grp-quot-class">
+        <statement>
+            <p>
+                <m>G</m>を群、<m>H</m>をその部分群、<m>x,y\in G</m>とする。<m>x^{-1}y\in H</m>であるとき、<m>x\sim y</m>と定義する。これは明らかに同値関係であり、商集合<m>G/H:=G/\sim</m>を<m>G</m>の<m>H</m>による<term>左剰余類(left quotient class)</term>という。同様に<m>y^{-1}x\in H</m>も同値関係となり、商集合をとることによって右剰余類を定義できる。
+            </p>
+        </statement>
+    </definition>
+
+    <p>
+        明らかに、<m>G</m>が可換なら右剰余類と左剰余類は一致する。
+    </p>
+
+    <definition xml:id="def-normal-subgrp">
+        <statement>
+            <p>
+                <m>G</m>を群、<m>H</m>をその部分群とする。任意の<m>g\in G, h\in H</m>に対して<m>ghg^{-1}\in H</m>となるとき、<m>H</m>は<m>G</m>の<term>正規部分群(normal subgroup)</term>であるといい、<m>H \triangleleft G</m>と書く。
+            </p>
+        </statement>
+    </definition>
+    
+    <p>
+        <m>G</m>が可換なら<m>ghg^{-1}=gg^{-1}h=h</m>なので、<m>H</m>は常に正規部分群である。
+    </p>
+
+    <proposition>
+        <statement>
+            <p>
+                <m>\phi :G_1\to G_2</m>を準同型とするとき、<m>\ker(\phi)\triangleleft G_1</m>である。
+            </p>
+        </statement>
+        <proof>
+            <p>
+                <m>h\in \ker(\phi), g\in G</m>をとる。
+                <m>\phi(ghg^{-1})=\phi(g)\phi(g)^{-1}\phi(h)=1_{G_1}</m>であり、<m>1_{G_1}\in \ker(\phi)</m>なので示せた。
+            </p>
+        </proof>
+    </proposition>
+
+    
+
+</subsection>
+
+<subsection>
+    <title>剰余群</title>
+    
+    
+    <p>
+        では、お待ちかねの剰余群を定義しよう。そのために次の補題を示す。
+    </p>
+
+    <lemma>
+        <statement>
+            <p>
+                <m>N</m>を<m>G</m>の正規部分群とし、<m>g\in G</m>とする。このとき<m>gN=Ng</m>である。なお、<m>gN:=\{gn; n\in N\}</m>である。
+            </p>
+        </statement>
+        <proof>
+            <p>
+                <m>n\in N</m>をとる。<m>m:=gng^{-1}</m>とすると<m>m\in N</m>で、<m>gN\ni mg=gn\in Ng</m>である。これで<m>gN\subset Ng</m>がいえた。同様にして<m>Ng\subset gN</m>も成り立つ。
+            </p>
+        </proof>
+    </lemma>
+
+    <p>
+        上の補題は正規部分群なら剰余類が一致することを言っている。
+    </p>
+    <p>
+        <m>G/N</m>の元<m>N_1,N_2</m>を、それぞれの代表元<m>g,h</m>をとって<m>gN,hN</m>と表す。<m>gN,hN</m>に対する演算を、<me>gNhN=ghN</me>で定義する。
+    </p>
+    <p>
+        さて、勘のいい読者は気づかれたかもしれないが、この演算はwell-definednessが問題になる。どういうことかというと、この演算は要は集合から元を1つ適当に選び(代表元の定義を参照)、それともう1つの代表元をかけているのである。代表元は選び方に特に制約を設けていない以上、異なる元<m>g_1,g_2\in N_1</m>(<m>h</m>の場合も同様)を選んで計算しても、最終的にそれらがイコールで結ばれることを証明しないといけないのである。
+    </p>
+    <p>
+        このように、剰余をとるときにはwell-definednessが絡んでくるのである。以下、その証明を行う。
+    </p>
+    <p>
+        <m>gN,hN</m>の元は<m>n,n'\in N</m>を使うことで<m>gn,hn'</m>と書ける。すると<m>gnhn'=ghh^{-1}nhn'</m>だが、<m>N</m>が正規部分群なので<m>h^{-1}nh, h^{-1}nhn\in N</m>である。これを用いると<m>gnhn'\in ghN</m>とでき、両者の剰余類が等しいことがわかる。
+    </p>
+
+    <p>
+        <m>G/N</m>が群となることは明らかである。実際、単位元は<m>1_GN=N</m>とすればよく、<m>((gN)(hN))(kN)=(ghN)(kN)=((gh)k)N=(g(hk))N</m>なので結合法則が成り立つ。逆元も<m>g^{-1}N</m>とすればよい。
+    </p>
+
+    <definition >
+        <statement>
+            <p>
+                上の考察により定まった群を<m>G</m>の<m>N</m>による<term>剰余群(quotient group)</term>という。
+            </p>
+        </statement>
+    </definition>
+
+    <p>
+        商集合の定義で触れた自然な写像<m>\pi: G\to G/N</m>は全射準同型であり、<m>\ker (\pi)=N</m>である。証明は容易なので、各自が試してみるとよい。
+    </p>
+</subsection>
+
+</section>
