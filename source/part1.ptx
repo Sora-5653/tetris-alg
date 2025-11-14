@@ -41,7 +41,7 @@
 
     <xi:include href="./hom-theorems.ptx" />
 
-    <!-- <xi:include href="./exercise-of-chapter2.ptx" /> -->
+    <xi:include href="./exercise-of-chapter2.ptx" />
 
   </chapter>
 
