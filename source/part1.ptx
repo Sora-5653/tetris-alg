@@ -7,29 +7,6 @@
     <p> ここでは集合論, 群論, 群作用, 可換環論を解説する。 </p>
   </introduction>
 
-  <chapter xml:id="part0" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>なぜ代数学なのか?</title>
-
-  <introduction>
-    <p>ここではなぜ代数を用いた研究がテトリスで有効なのか、具体的な研究内容とともにその威力を概説する。 </p>
-  </introduction>
-
-  <section xml:id="sec-what-is-algebra">
-    <title>代数学とは何か?</title>
-    <p>「代数学」という言葉を聞いた読者諸君は、<me>1+1=2</me>のような数式を想像するかもしれない。
-      しかし現代数学の文脈において、代数学とは一言で言えば、「構造」の学問である。
-    </p>
-    <p>構造、と言って仕舞えば少々抽象的であるが、その全容は集合に"演算"が入っているだけのことである。例えば整数は和という演算ができ、実数は四則演算ができるといった具合になる。それに様々な操作を施したり、
-      別な構造との関係を考えることによってその構造を調べようというものが代数学のおおまかな説明である。</p>
-
-    </section>
-  
-  <xi:include href="example-parity.ptx" />
-
-  <xi:include href="example-tiling.ptx" />
-
-</chapter>
-
   <chapter xml:id="set-theory">
     <title>集合論</title>
     
@@ -43,8 +20,7 @@
 
     <xi:include href="./cardinality-of-sets.ptx" />
 
-    <!--
-    <xi:include href="./cardinality-and-hypotesis.ptx" /> -->
+    <!-- <xi:include href="./cardinality-and-hypotesis.ptx" /> -->
 
     <xi:include href="./exercise-of-chapter1.ptx" />
     
@@ -62,6 +38,10 @@
     <xi:include href="./hom-and-isom.ptx" />
 
     <xi:include href="./quot-grp.ptx" />
+
+    <xi:include href="./hom-theorems.ptx" />
+
+    <!-- <xi:include href="./exercise-of-chapter2.ptx" /> -->
 
   </chapter>
 

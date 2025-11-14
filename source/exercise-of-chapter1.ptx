@@ -46,7 +46,10 @@
                 </p>
             </answer>
         </exercise>
-        <exercise>
+        <exercise xml:id="ex-bijection">
+            <title>H</title>
+            
+            
             <statement>
                 <p>
                     <m>f:A\to B</m>が全単射であることと、<m>f</m>が逆写像<m>g</m>を持つ(<m>g\circ f=\mathrm{id}_Aかつf \circ g=\mathrm{id}_B</m>、なお<m>\mathrm{id}</m>は入力と出力が一致する写像)ことが同値であることを証明せよ。
@@ -60,6 +63,31 @@
                     この場合、<m>\implies</m>側の仮定は単射であること(<m>f(a)\neq f(b)\implies a\neq b</m>)と全射であること(<m>\forall b\in B, \exists a, f(a)=b</m>)である。示すべき目標は合成写像が元<m>a</m>を動かさないことだから、まず具体的な元を<m>A</m>から取って考えてみればよいであろう。逆も同様にして考えよ。
                 </p>
             </hint>
+            <answer>
+                <p>
+                    <ol>
+                        <li>
+                            <title><m>\implies</m></title>
+                            
+                            
+                            <p>
+                                <m>a\in A, b\in B</m>をとる。<m>g</m>として<m>f^{-1}</m>を選ぶ。全射性より<me>(g\circ f)(a)=f^{-1}(f(a))=\{x\in A; f(x)=f(a)\}=a</me>となり、<m>f</m>は単射だから<m>g\circ f=\mathrm{id}_A</m>である。次に<m>f(f^{-1}(b))=b</m>を示す。<m>f</m>は全射なので<m>f(a)=b</m>なる<m>a\in f^{-1}(b)</m>が存在し、<m>a</m>は単射なので<m>a\neq a'\in f^{-1}(b)</m>なら<m>b=f(a)\neq f(a')</m>である(単射性の対偶)ため<m>a=a'</m>である。よって<m>f^{-1}</m>はただ一つの元からなり、問題の合成は<m>\mathrm{id}_B</m>に等しい。
+                            </p>
+                        </li>
+                        <li>
+                            <title>\impliedby</title>
+                            
+                            
+                            <p>
+                                まず<m>g\circ f=\mathrm{id}_A</m>とする。<m>a,a'\in A</m>をとると<m>g\circ f(a)=g\circ f(a')</m>なら<me>\mathrm{id}_A(a)=a=a'=\mathrm{id}_A(a')</me>なので単射性がいえる。<m>(g\circ f)^{-1}(b)=\{x\in B; \mathrm{id}_A(x)=a\}</m>だが、<m>\mathrm{id}_A(a)=a</m>なのでこれは明らか。
+                            </p>
+                            <p>
+                                逆もまったく同様である。
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer>
         </exercise>
         <exercise>
             <statement>
@@ -67,7 +95,7 @@
                     写像<m>f:A\to B</m>を考える。任意の部分集合<m>S\subset B</m>について、<ol>
                         <li>
                             <p>
-                                <m>f^{-1}(f(f^{-1}(S)))=f^{-1}(S)</m>であること
+                                <m>A:=f^{-1}(f(f^{-1}(S)))</m>と<m>f^{-1}(S)</m>が等しいこと
                             </p>
                         </li>
                         <li>
@@ -84,7 +112,24 @@
                     <ol>
                         <li>
                             <p>
-                                内包表記で書き下す。<me>f^{-1}(f(X))=\{a\in A; \forall x\in f(X), f(a)=f(x)\}=X</me>である。これを問題に適用して<m>f^{-1}(f(f^{-1}(S)))=f^{-1}(S)</m>を得る。
+                                <ol>
+                                    <li>
+                                        <title><m>\subset</m></title>
+                                        
+                                        
+                                        <p>
+                                            <m>x\in f^{-1}(f(f^{-1}(S)))</m>をとる。<me>A=\{a\in A;f(a)\in f(f^{-1}(S))\subset S\}</me>となり、<m>f(a)\in S</m>なので、<me>A=\{a\in A;a\in f^{-1}(S)\}</me>である。仮定より<m>x\in f^1(S)</m>なので、題意が示された。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <title><m>\supset</m></title>
+                                        
+                                        
+                                        <p>
+                                            <m>x\in f^{-1}(S)</m>をとる。(i)より左辺<m>=\{a\in A;a\in f^{-1}(S)\}</m>なので<m>x\in f^{-1}(S)\implies x\in A</m>である。
+                                        </p>
+                                    </li>
+                                </ol>
                             </p>
                         </li>
                         <li>
@@ -147,7 +192,7 @@
             </statement>
             <answer>
                 <p>
-                    空集合から元は取れないので、部分集合の定義である<me>x\in\emptyset \implies A</me>という論理式は空虚な真により常に真である。
+                    空集合から元は取れないので、部分集合の定義である<me>x\in\emptyset \implies x\in A</me>という論理式は空虚な真により常に真である。
                 </p>
             </answer>
         </exercise>

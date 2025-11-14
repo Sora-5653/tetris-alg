@@ -77,7 +77,7 @@
                 </li>
                 <li>
                     <p>
-                        <m>x-y=nk, y-z=nl \left(k,l\in \mathbb Z\right)</m>と書けたとする。<m>x-z=x-y+y-z=nk-nl=n(k-l)</m>である。
+                        <m>x-y=nk, y-z=nl \left(k,l\in \mathbb Z\right)</m>と書けたとする。<me>x-z=x-y+y-z=nk-nl=n(k-l)</me>である。
                     </p>
                 </li>
             </ol>
@@ -95,12 +95,12 @@
                 <ol>
                     <li>
                         <p>
-                            <m>\sim</m>によって作られた同値類の全体を<m>S/\sim</m>と書き、<m>S</m>の<m>\sim</m>による<term>商(quotient)</term>という。<m>S</m>の各元に対して<m>S/\sim</m>の集合が1つ対応する。これを<m>S</m>から<m>S/\sim</m>への<term>自然な写像(natural map)</term>という。
+                            <m>\sim</m>によって作られた同値類の全体を<m>S/{\sim}</m>と書き、<m>S</m>の<m>\sim</m>による<term>商(quotient)</term>という。<m>S</m>の各元に対して<m>S/{\sim}</m>の集合が1つ対応する。これを<m>S</m>から<m>S/{\sim}</m>への<term>自然な写像(natural map)</term>という。
                         </p>
                     </li>
                     <li>
                         <p>
-                            <m>S/\sim</m>の元<m>C</m>に対し、<m>x\in C</m>となる元を<m>C</m>の代表元という。これは同値類をラベリングするだけの元なので適当に選んでよい。
+                            <m>S/{\sim}</m>の元<m>C</m>に対し、<m>x\in C</m>となる元を<m>C</m>の代表元という。これは同値類をラベリングするだけの元なので適当に選んでよい。
                         </p>
                     </li>
                     <li>
@@ -129,7 +129,7 @@
     <definition xml:id="def-grp-quot-class">
         <statement>
             <p>
-                <m>G</m>を群、<m>H</m>をその部分群、<m>x,y\in G</m>とする。<m>x^{-1}y\in H</m>であるとき、<m>x\sim y</m>と定義する。これは明らかに同値関係であり、商集合<m>G/H:=G/\sim</m>を<m>G</m>の<m>H</m>による<term>左剰余類(left quotient class)</term>という。同様に<m>y^{-1}x\in H</m>も同値関係となり、商集合をとることによって右剰余類を定義できる。
+                <m>G</m>を群、<m>H</m>をその部分群、<m>x,y\in G</m>とする。<m>x^{-1}y\in H</m>であるとき、<m>x\sim y</m>と定義する。これは明らかに同値関係であり、商集合<m>G/H:=G/{\sim}</m>を<m>G</m>の<m>H</m>による<term>左剰余類(left quotient class)</term>という。同様に<m>y^{-1}x\in H</m>も同値関係となり、商集合をとることによって右剰余類を定義できる。
             </p>
         </statement>
     </definition>
@@ -158,7 +158,7 @@
         </statement>
         <proof>
             <p>
-                <m>h\in \ker(\phi), g\in G</m>をとる。
+                <m>h\in \ker(\phi), g\in G_1</m>をとる。
                 <m>\phi(ghg^{-1})=\phi(g)\phi(g)^{-1}\phi(h)=1_{G_1}</m>であり、<m>1_{G_1}\in \ker(\phi)</m>なので示せた。
             </p>
         </proof>
@@ -206,7 +206,7 @@
     </p>
 
     <p>
-        <m>G/N</m>が群となることは明らかである。実際、単位元は<m>1_GN=N</m>とすればよく、<m>((gN)(hN))(kN)=(ghN)(kN)=((gh)k)N=(g(hk))N</m>なので結合法則が成り立つ。逆元も<m>g^{-1}N</m>とすればよい。
+        <m>G/N</m>が群となることは明らかである。実際、単位元は<m>1_GN=N</m>とすればよく、<me>((gN)(hN))(kN)=(ghN)(kN)=((gh)k)N=(g(hk))N</me>なので結合法則が成り立つ。逆元も<m>g^{-1}N</m>とすればよい。
     </p>
 
     <definition >

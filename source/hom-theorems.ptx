@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hom-theorems">
+    <title>準同型定理</title>
+    
+    <p>
+        この節では、群論やその他の代数構造における非常に重要かつ便利な定理である「準同型定理」を解説する。
+    </p>
+
+<subsection>
+
+    <title>可換図式</title>
+
+    <p>
+        その前に、まずは「可換図式」という、数学における便利な記法について学ぼう。
+    </p>
+
+    <p>
+        <term>図式</term>とは、次のように写像の関係を図示したものである:
+    </p>
+
+<image width="40%">
+    <latex-image>
+        \begin{tikzpicture}[auto,->, transform shape]
+
+        \node (A) at (2,0) {$A$};
+        \node (B) at (2,2){$B$};
+        \node (C) at (0,0) {$C$};
+        \node (D) at (0,2) {$D$};
+        \draw (A) -- node {$\scriptstyle f$} (B);
+        \draw (A) -- node[swap] {$\scriptstyle p$} (C);
+        \node at (1,1) {$\circlearrowleft$};
+        \draw (C) -- node {$\scriptstyle g$} (D);
+        \draw (B) -- node {$\scriptstyle q$} (D);
+
+        \end{tikzpicture}
+    </latex-image>
+</image>
+
+<p>
+    この図式が<term>可換(commutative)</term>であるとは、<m>p\circ f=g\circ p</m>が成り立つことである。中央の<m>\circlearrowleft</m>は図式の可換性を表す。つけない流儀もあり、本書ではそちらを採用する。
+</p>
+
+<p>特定の写像<m>f</m>について存在性を言う定理の場合、主張の図式の矢印は破線で書かれることが多い:</p>
+
+<image width="35%">
+    <latex-image>
+        \begin{tikzpicture}[auto, ->, transform shape]
+            \node (A) at (0,0) {$A$};
+            \node (B) at (2,0) {$B$};
+            \draw[dashed] (A) -- node {$\scriptstyle f$} (B);
+        \end{tikzpicture}
+    </latex-image>
+</image>
+
+<p>全射性と単射性も矢印の形で表現する:</p>
+
+<image width="35%">
+    <latex-image>
+        \usetikzlibrary{arrows.meta}
+        \begin{tikzpicture}[auto,transform shape]
+            \node (A) at (0,0) {$A$};
+            \node (B) at (3,0) {$B$};
+            \draw[->>] (A) to[bend right=20] node[swap] {$\mathrm{surjective}$} (B);
+            \draw[{Hooks[right]}->] (A) to[bend left=20] node {$\mathrm{injective}$} (B);
+        \end{tikzpicture}
+    </latex-image>
+</image>
+
+</subsection>
+
+<subsection>
+    <title>準同型定理</title>
+
+    <p>
+        
+    </p>
+
+    <theorem xml:id="thm-1st-isom">
+        <title>第一同型定理</title>
+
+        <p>
+            まずは最重要である、第一同型定理を示そう。
+        </p>
+        
+        <statement>
+            <p>
+                <m>\phi: G\to H</m>を準同型とする。<m>\pi: G\to G/(\ker(\phi))</m>とするとき、次を可換にするような<m>\psi:G/\ker(\phi)\to  H</m>が一意的に存在し、同型<m>\mathrm{Im}(\phi)\cong G/\ker(\phi)</m>を与える。
+            </p>
+            <image width="40%">
+                <latex-image>
+                    \begin{tikzpicture}[auto, transform shape, ->]
+                        \node (G) at (0,2) {$G$}; \node (H) at (2,2) {$H$};
+                        \node (Q) at (0,0) {$G/\ker(\phi)$};
+                        \draw (G) -- node {$\phi$} (H);
+                        \draw (G) -- node[swap] {$\pi$} (Q);
+                        \draw[dashed] (Q) -- node {$\exists !\psi$} (H);
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </statement>
+        <proof>
+            <p>
+                この証明はまず
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <title><m>\psi</m>の構成</title>
+                        
+                        <p>
+                            <m>N=\ker(\phi)</m>とおく。<m>g\in G</m>に対して、<m>\psi(gN)=\phi(g)</m>と定義する。
+                        </p>
+                        <p>
+                            well-definednessを示す。<m>n\in N</m>を任意にとると、<me>\phi(gn)=\phi(g)\phi(n)=\phi(g)1_H</me>なので、<m>\psi:G/N\to H</m>はwell-definedである。
+                        </p>
+                        <p>
+                            準同型であることを言う。<me>\psi((gN)(hN))=\psi(ghN)=\phi(gh)=\psi(gN)\psi(hN)</me>となる。
+                        </p>
+                        <p>
+                            最後に可換性を言おう。<m>\phi=\psi\circ\pi</m>を示せばよい。<m>g\in G</m>をとると、<m>\pi(g)</m>はある剰余類<m>gN</m>に送られる。定義より<m>\psi(gN)=\phi(g)</m>だから、<m>\psi(\pi(g))=\phi(g)</m>となる。
+                        </p>
+                    </li>
+                    <li>
+                        <title>同型<m>\mathrm{Im}(\phi)\cong G/\ker(\phi)</m></title>
+                        
+                        <p>
+                            全単射性を示せば、<xref ref="prop-biject-hom" />より、これは同型になる。
+                        </p>
+                        <p>
+                            <m>\psi(gN)=1_H</m>なら<m>\phi(g)=1_H</m>なので<m>g\in N</m>であり、<m>gN=N</m>は<m>G/N</m>の単位元だから、これは単射。<m>g\in G</m>なら<m>\phi(g)=\psi(gN)</m>なので、<m>\mathrm{Im}(\phi)\subset \mathrm{Im}(\psi)</m>である。同様に、<m>\mathrm{Im}(\psi)\subset \mathrm{Im}(\phi)</m>である。<m>G/N\to \mathrm{\psi}</m>は定義より常に全射だから、<m>G/N\cong \mathrm{Im}(\psi)=\mathrm{Im}(\phi)</m>である。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            最後に一意性だが、任意の<m>\psi</m>が<m>\psi\circ\pi=\phi</m>なら<m>\psi(gN)=\phi(g)</m>と値が定まるので、言うまでもなく一意的である。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </proof>
+    </theorem>
+    
+</subsection>    
+
+</section>

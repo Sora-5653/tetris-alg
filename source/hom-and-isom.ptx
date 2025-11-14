@@ -28,7 +28,7 @@
         </statement>
         <proof>
             <p>
-                <m>1_{G_1}\in G_1</m>をとる。<m>\phi (1_{G_1})=\phi (1_{G_1}1_{G_1})=\phi(1_{G_1})\phi (1_{G_1}))</m>なので、これは<m>G_2</m>の単位元である。
+                <m>1_{G_1}\in G_1</m>をとる。<m>\phi (1_{G_1})=\phi (1_{G_1}1_{G_1})=\phi(1_{G_1})\phi (1_{G_1})</m>なので、これは<m>G_2</m>の単位元である。
             </p>
         </proof>
     </proposition>
@@ -50,7 +50,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>\mathrm{Im} (\phi):= \{\phi(x); x\in G_1\}</m>と書き、準同型の<term>像(image)</term>
+                            <m>\mathrm{Im} (\phi):= \{\phi(x); x\in G_1\}</m>と書き、準同型の<term>像(image)</term>という。
                         </p>
                     </li>
                 </ol>    
@@ -70,7 +70,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>\ker (\phi), \mathrm{Im}</m>はそれぞれ<m>G_1,G_2</m>の部分群である。
+                            <m>\ker (\phi), \mathrm{Im}(\phi)</m>はそれぞれ<m>G_1,G_2</m>の部分群である。
                         </p>
                     </li>
                 </ol>
@@ -81,7 +81,7 @@
                 <ol>
                     <li>
                         <p>
-                            <m>1_{G_2}=\phi (1_{G_1})=\phi (x^{-1}x)=\phi (x)\phi (x^{-1})</m>なので、<m>\phi (x)</m>に<m>\phi (x^{-1})</m>をかけて<m>1</m>になるということは、<m>\phi (x^{-1})</m>が<m>\phi (x)</m>の逆元であることを意味する。
+                            <me>1_{G_2}=\phi (1_{G_1})=\phi (x^{-1}x)=\phi (x)\phi (x^{-1})</me>なので、<m>\phi (x)</m>に<m>\phi (x^{-1})</m>をかけて<m>1</m>になるということは、<m>\phi (x^{-1})</m>が<m>\phi (x)</m>の逆元であることを意味する。
                         </p>
                     </li>
                     <li>
@@ -89,13 +89,26 @@
                             両者ともに単位元の存在は自明である。
                         </p>
                         <p>
-                            まず<m>\ker</m>の場合を示す。<m>x,y\in \ker \phi</m>をとる。<m>\phi(xy^{-1})=\phi (x)\phi (y^{-1})=\phi (x)\phi (y)^{-1}=1\bullet 1^{-1}=1</m>。したがって<m>xy{^1}</m>は<m>\ker</m>の元である。
+                            まず<m>\ker</m>の場合を示す。<m>x,y\in \ker(\phi)</m>をとる。<m>\phi(xy^{-1})=\phi (x)\phi (y^{-1})=\phi (x)\phi (y)^{-1}=1\bullet 1^{-1}=1</m>。したがって<m>xy{^1}</m>は<m>\ker</m>の元である。
                         </p>
                         <p>
-                            次に<m>\mathrm{Im}</m>の場合を示そう。<m>x,y\in \mathrm{Im} \phi</m>をとる。定義より、<m>\phi(a)=x, \phi(b)=y</m>となる<m>a,b</m>が存在する。<m>xy^{-1}=\phi(a)\phi(b^{-1})=\phi(ab^{-1})</m>である。<m>ab^{-1}</m>は<m>G_1</m>の元であるため、題意が示された。
+                            次に<m>\mathrm{Im}</m>の場合を示そう。<m>x,y\in \mathrm{Im}(\phi)</m>をとる。定義より、<m>\phi(a)=x, \phi(b)=y</m>となる<m>a,b</m>が存在する。<m>xy^{-1}=\phi(a)\phi(b^{-1})=\phi(ab^{-1})</m>である。<m>ab^{-1}</m>は<m>G_1</m>の元であるため、題意が示された。
                         </p>
                     </li>
                 </ol>
+            </p>
+        </proof>
+    </proposition>
+
+    <proposition xml:id="prop-biject-hom">
+        <statement>
+            <p>
+                <m>\phi: G_1\to G_2</m>を全単射準同型とすると、<m>\phi</m>は同型である。
+            </p>
+        </statement>
+        <proof>
+            <p>
+                逆写像を<m>\psi</m>とおく。<m>\phi(\psi(x)\psi(y))=\phi(\psi(x))\phi(\psi(y))</m>である。<m>\phi</m>は単射なので、<m>\psi(xy)=\psi(x)\psi(y)</m>。
             </p>
         </proof>
     </proposition>
@@ -130,13 +143,13 @@
                 まず<m>\phi: \mathbb R\to S^1</m>を与える。<m>e^{i\theta}</m>で単位円周上の任意の動径をもつ点を表せるから、<m>\phi(\theta)=e^{i\theta}</m>とすれば、先ほどの例よりこれは準同型である。この準同型単体でも、実数<m>\mathbb R</m>の演算が円周上の点の積に保存されていることがわかる。<m>f:\mathbb R\times \mathbb R \to T</m>を<m>(\theta_1, \theta_2)\mapsto (\phi(\theta_1),\phi(\theta_2))</m>とすることで準同型になる。
             </p>
             <p>
-                とくに、<m>h: \mathbb R\to S^1</m>を、<m>h(t):= \cos 2\pi t + i\sin 2\pi t</m>と定めると、<m>h^{-1}((cos \theta, sin \theta))=\dfrac{\theta}{2\pi}+m</m>(<m>m</m>は整数)となる。<m>t</m>を動かすと、写像の軌跡が円周を何度もたどり、被覆するような形になっているのが見て取れるだろう。この写像は実数直線<m>\mathbb R</m>を「変形」し、円周の上に重ねる写像と捉えることができる。代数トポロジーという分野ではこの状況を、<m>\mathbb R</m>が円周<m>S^1</m>の<term>被覆空間(covering space)</term>であるといい、<m>h</m>を<term>被覆写像(covering map)</term>と呼ぶ。とくにこの場合の<m>\mathbb R</m>は普遍被覆という性質のよい被覆空間となっている。被覆空間の理論では下で紹介する自己同型群を空間の変換全体のなす群と捉え、豊富な理論が展開される。
+                とくに、<m>h: \mathbb R\to S^1</m>を、<m>h(t):= \cos 2\pi t + i\sin 2\pi t</m>と定めると、<m>h^{-1}((\cos \theta, \sin \theta))=\dfrac{\theta}{2\pi}+m</m>(<m>m</m>は整数)となる。<m>t</m>を動かすと、写像の軌跡が円周を何度もたどり、被覆するような形になっているのが見て取れるだろう。この写像は実数直線<m>\mathbb R</m>を「変形」し、円周の上に重ねる写像と捉えることができる。代数トポロジーという分野ではこの状況を、<m>\mathbb R</m>が円周<m>S^1</m>の<term>被覆空間(covering space)</term>であるといい、<m>h</m>を<term>被覆写像(covering map)</term>と呼ぶ。とくにこの場合の<m>\mathbb R</m>は普遍被覆という性質のよい被覆空間となっている。被覆空間の理論では下で紹介する自己同型群を空間の変換全体のなす群と捉え、豊富な理論が展開される。
             </p>
         </statement>
     </example>
     
     <p>
-        テトリスには必要ないが、重要な概念として自己同型群をあげておく。
+        重要な概念として自己同型群をあげておく。
     </p>
 
     <definition>
@@ -148,4 +161,8 @@
             </p>
         </statement>
     </definition>
+
+    <p>
+        自己同型とはつまり、演算を壊さないように集合の元だけを「置換」する、自己変換のなす群とみなせる。
+    </p>
 </section>
