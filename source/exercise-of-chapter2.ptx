@@ -86,7 +86,7 @@
         
         <statement>
             <p>
-                有理数体<m>\mathbb Q</m>上の<term>楕円曲線(elliptic curve)</term>とは、<m>a,b,c,d\in Q</m>に対して<m>y^2=ax^2+bx^2+cx+d</m>であり、かつ<m>a\neq 0</m>で、右辺の三次式が重根を持たない(判別式<m>=-16(4a^3+27b^2)÷neq 0</m>)ものの関数としてのグラフである。次の問いに答えよ。<ol>
+                有理数体<m>\mathbb Q</m>上の<term>楕円曲線(elliptic curve)</term>とは、<m>a,b,c,d\in Q</m>に対して<m>y^2=ax^2+bx^2+cx+d</m>であり、かつ<m>a\neq 0</m>で、右辺の三次式が重根を持たない(判別式<m>=-16(4a^3+27b^2)\neq 0</m>)ものの関数としてのグラフである。次の問いに答えよ。<ol>
                     <li>
                         <p>
                             <m>E</m>を<m>\mathbb Q</m>上の楕円曲線とする。<m>E</m>を定義する方程式の解集合<me>V(E)=\{(x,y)\in \mathbb Q\times \mathbb Q;y^2=ax^3+bx^2+cx+d\}</me>に、無限遠点とよばれる一点<m>O\neq (0,0)</m>を加えた<m>E(\mathbb Q):=V(E)\cup \{O\}</m>に可換群の構造を与える、次の文章の空欄<m>\mathrm{(i)\sim (vii)}</m>を埋めよ。
