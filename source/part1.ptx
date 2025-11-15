@@ -45,5 +45,11 @@
 
   </chapter>
 
+  <chapter xml:id="ch-grp-action">
+    <title>群作用</title>
+    
+    <xi:include href="./grp-action.ptx" />
+
+  </chapter>
 
 </part>

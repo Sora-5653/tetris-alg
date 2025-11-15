@@ -3,7 +3,7 @@
 <section xml:id="choice-and-zorn" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>選択公理とZorn's Lemma</title>
     <p>
-        
+        この節では、数学を成り立たせる前提一つである「選択公理」と、それと同値な「Zornの補題」を扱う。
     </p>
     
 </section>

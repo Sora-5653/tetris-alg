@@ -2,13 +2,217 @@
 
 <section xml:id="sec-ex-chap2">
     <title>第2章の演習問題と略解</title>
-    
+    <exercises>
     <exercise>
         <statement>
             <p>
-                
+                <m>G=\{0,1\}</m>とする。この集合に群構造を入れないような演算を1つ定めよ。
             </p>
         </statement>
+        <answer>
+            <p>
+                <me>0\bullet 0=0,0\bullet 1=1\bullet 0=0, 1\bullet 1=1</me>とすればよい。
+            </p>
+        </answer>
     </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                <m>\mathbb R^\times :=\mathbb R\setminus \{0\}</m>を通常の乗法によって群とみなすとき、<me>\mathbb R_{\gt}=\{x\in \mathbb R;x\gt 0\}</me>はその部分群であることを示せ。
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>x,y\in \mathbb R_{\gt}</m>をとる。<m>xy^{-1}=\frac{x}{y}</m>は必ず正であり、<m>1_\mathbb R</m>も正なのでこれは部分群である。
+            </p>
+        </answer>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                <m>\mathbb R</m>を加法群とみなしたとき、<m>\mathbb R_\gt</m>は<m>\mathbb R</m>の部分群ではないことを示せ。
+            </p>
+        </statement>
+        <answer>
+            <p>
+                例えば<m>5,1\in \mathbb R_\gt</m>だが<m>1-5=-4\notin \mathbb R_\gt</m>である。
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                <m>g\in G</m>に対して<m>g^2=1</m>なら<m>G</m>は可換であることを示せ。
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>g,h\in G</m>をとる。<m>(gh)(gh)=1</m>であり、結合法則から<m>g(hg)h=1</m>である。よって<m>hg=gg(hg)hh=g1h=gh</m>となり、任意の<m>g,h</m>について<m>gh=hg</m>なので、<m>G</m>は可換群である。
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                <m>N_1,N_2</m>が<m>G</m>の正規部分群なら、<m>N_1N_2</m>もそうであることを示せ。
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>n_1\in N_1, n_2\in N_2</m>をとる。任意の<m>g\in G</m>に対して<me>gn_1g^{-1}\in N_1, gn_2g^{-1}\in N_2</me>である。よって<me>gn_1g^{-1}gn_2g^{-1}=gn_1n_2g^{-1} \in N_1N_2</me>である。これで正規性が言え、<m>N_1N_2</m>は明らかに<m>G</m>の部分群なので題意が示された。
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                <m>\mathbb R</m>を加法群とみなすとき、<m>a\in \mathbb R^\times</m>に対して<m>\mathbb R/\mathbb Z\cong \mathbb R/\mathbb a\mathbb Z</m>であることを示せ。
+            </p>
+        </statement>
+        <answer>
+            <p>
+                準同型<m>\mathbb R\to \mathbb R/a\mathbb Z</m>を、核が<m>\mathbb Z</m>であるように作ればよい。<m>f_a(x)=ax+a\mathbb Z</m>とすると、<me>f_a(0)=a\mathbb Z, f_a(x)+f_a(y)=a(x+y)+a\mathbb Z=f_a(x+y)</me>だから準同型。<m>ax+a\mathbb Z</m>が0となるのは<m>x\in Z</m>のときに限るから<m>\ker(f_a(x))=\mathbb Z</m>である。さらに、<m>x\in \mathbb R/a\mathbb Z</m>は<m>x+an,(n\in \mathbb Z)</m>の形をしているから、<m>\frac{x}{a}</m>などをとれば逆像は空ではない。よって<m>f_a</m>は全射であり、すなわち<m>\mathrm{Im}(f_a)=\mathbb R/a\mathbb Z</m>である。よって準同型定理より<m>\mathbb R/\mathbb Z\cong \mathrm{Im}(f_a)=\mathbb R/a\mathbb Z</m>となる。
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise>
+        <title>楕円曲線の構造決定.H</title>
+        
+        
+        <statement>
+            <p>
+                有理数体<m>\mathbb Q</m>上の<term>楕円曲線(elliptic curve)</term>とは、<m>a,b,c,d\in Q</m>に対して<m>y^2=ax^2+bx^2+cx+d</m>であり、かつ<m>a\neq 0</m>で、右辺の三次式が重根を持たない(判別式<m>=-16(4a^3+27b^2)÷neq 0</m>)ものの関数としてのグラフである。次の問いに答えよ。<ol>
+                    <li>
+                        <p>
+                            <m>E</m>を<m>\mathbb Q</m>上の楕円曲線とする。<m>E</m>を定義する方程式の解集合<me>V(E)=\{(x,y)\in \mathbb Q\times \mathbb Q;y^2=ax^3+bx^2+cx+d\}</me>に、無限遠点とよばれる一点<m>O\neq (0,0)</m>を加えた<m>E(\mathbb Q):=V(E)\cup \{O\}</m>に可換群の構造を与える、次の文章の空欄<m>\mathrm{(i)\sim (vii)}</m>を埋めよ。
+                        </p>
+                        <p>
+                            <m>O</m>を単位元とする。<m>P=O</m>なら<m>P+Q=Q,</m><m>Q=O</m>なら<m>P+Q=Q</m>とする。<m>P,Q\neq O</m>の時の和を定める。
+                        </p>
+                        <p>
+                            <m>P(x_1,y_1),Q(x_2,y_2)</m>とおく。<m>x_1\neq x_2</m>と仮定する。このとき直線<m>PQ</m>は<me>y=\dfrac{(\mathrm i)}{(\mathrm{ii})}(\mathrm{iii})+y_1 \tag{1.1}</me>で与えられる。この直線と楕円曲線の交点を求める。先ほどの式を<m>E</m>の定義式に代入して、
+                            <me>
+                                qx^3+rx^2+sx+t \tag{$q,r,s,t\in \mathbb Q, q\neq 0$}
+                            </me>
+                            の形の式を得る。<m>x_1,x_2</m>はこの式の解だから、<m>qx^2+rx^2+sx+t</m>は<m>(\mathrm{iv})</m>と<m>(\mathrm v)</m>で割り切れ、
+                            <me>
+                                qx^3+rx^2+sx+t=q(\mathrm{iv})(\mathrm v)(x-x_3) \tag{$x_3 \in \mathbb Q$}
+                            </me>
+                            の形の因数分解ができる。
+                        </p>
+                        <p>
+                            (1.1)で<m>x=x_3</m>とおいたときの<m>y</m>を<m>y_4</m>とおき、<m>y_3:=-y_4</m>とおくとき、<m>(x_3,y_4)</m>は<m>E</m>と<m>PQ</m>の交点である。このとき、<me>P+Q:=(x_3,y_3)</me>と定める。<m>x_3,y_3</m>を計算すると、
+                            <me>
+                                x_3=\dfrac{1}{a}\left(\dfrac{(\mathrm i)}{(\mathrm{ii})}\right)^2-(\mathrm{vi})-(x_1+x_2)
+                            </me>
+                            <me>
+                                y_3=-\dfrac{(\mathrm i)}{(\mathrm{ii})}x_3+\dfrac{y_2x_1-y_1x_2}{(\mathrm{ii})}
+                            </me>
+                            である。
+                            
+                        </p>
+                        <p>
+                            つぎに、<m>x_1=x_2</m>の場合を定義する。
+                        </p>
+                        <p>
+                            <m>y_3=-y_2</m>の場合は<m>P+Q=O</m>と定める。<m>y_1\neq -y_2</m>の場合、<m>P=Q, y_1\neq 0</m>である。この場合、<m>PQ</m>は<m>E</m>の<m>P</m>における接線(ただ1つの点で<m>E</m>と接する直線)で、次の式で与えられる:
+                            <me>
+                                y=\dfrac{3ax_1^2+2bx_1+c}{2y_1}(x-x_1)+y_1 \tag{(1.2)}
+                            </me>(1.2)を<m>E</m>の定義式に代入して、再び
+                            <me>
+                                qx^3+rx^2+sx+t=0 \tag{$q,r,s,t\in \mathbb Q, q\neq 0$}
+                            </me>の形の方程式を得る。三次方程式は3つの解を持つが、(1.2)は接線だから<m>E</m>との交点が2つであり、<m>\mathrm{(vii)}</m>はこの方程式の重解である。
+                            したがって
+                            <me>
+                                qx^3+rx^2+sx+t=q(x-\mathrm{(vii)})^2(x-x_3) \tag{$x_3\in \mathbb Q$}
+                            </me>
+                            の形の因数分解ができる。
+                        </p>
+                        <p>
+                            (1.2)での<m>x=x_3</m>とした時の値を<m>y_4</m>、そして<m>y_3:=-y_4</m>とおくとき、<m>P+Q:=(x_3,y_3)</m>とする。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\mathbb Q</m>上の楕円曲線<m>y^2=x^3-4</m>で<m>P=(2,2)</m>の場合、<m>2P</m>を計算せよ。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            この群構造は<m>\mathbb F_2</m>上の楕円曲線<m>E(K)</m>に対して、この問題で行ったのと同じ形(ワイエルシュトラスの標準形)では定義できない。その理由を述べよ。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <m>y_2-y_1</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>x_2-x_1</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>x-x_1</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>x-x_1</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>x-x_2</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>\dfrac{b}{a}</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>x_1</m>
+                                    </p>
+                                </li>
+                            </ol>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                                        接線の方程式は<m>y=\dfrac{12a+2bx_1+c}{4}(x-2)+2=3x-4</m>であり、定義式に代入すると<me>x^3-9x^2+24x-20=0</me>を得る。<m>(2,2)</m>は重解だから、
+                                        多項式を割り算して因数分解<me>(x-2)^2(x-5)=0</me>を得る。<m>2P</m>の<m>x</m>座標は5だから、<m>3x-4</m>に代入して<m>11</m>が出てくる。これにマイナスをつけた<m>(5,-11)</m>が求める座標。
+                                    </p>
+                                    <p>
+                                        微積の素養がある読者は、接線ならばと微分で求めてみるものよい。<m>P</m>における接線の傾きは<me>2y\dfrac{dy}{dx}=3x^2</me>だから、<m>\frac{dy}{dx}=\frac{3x^2}{2y}</m>となり、傾きは<m>3</m>であるとわかり、傾きが3で<m>P(2,2)</m>を通る直線は<m>y=3x-4</m>と出てくる。後は同様である。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\mathbb F_2</m>では<m>2x</m>の形の元が消えるから、定義式が重根を持つため。実際、判別式<m>-16(4a^3+27b^2)</m>は、<m>-16</m>が偶数であるため、<m>\mathbb F_2\cong \mathbb Z/2\mathbb Z</m>上で消える。
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+    </exercise>
+
+    </exercises>
 
 </section>

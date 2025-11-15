@@ -135,4 +135,12 @@
 
 <p>なお、群の単位元は一意的である。実際、<m>1,e</m>が単位元の性質を満たすなら、<m>1=1e=e1=e</m>である。</p>
 
+<example>
+    <statement>
+        <p>
+            <m>X</m>を集合とするとき、全単射<m>\sigma: X\to X</m>を<term>置換(permutation)</term>という。これは<m>X</m>の元を取り替える操作を表している。
+        </p>
+    </statement>
+</example>
+
 </section>

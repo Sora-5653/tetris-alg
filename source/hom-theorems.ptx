@@ -85,7 +85,7 @@
         
         <statement>
             <p>
-                <m>\phi: G\to H</m>を準同型とする。<m>\pi: G\to G/(\ker(\phi))</m>とするとき、次を可換にするような<m>\psi:G/\ker(\phi)\to  H</m>が一意的に存在し、同型<m>\mathrm{Im}(\phi)\cong G/\ker(\phi)</m>を与える。
+                <m>\phi: G\to H</m>を準同型とする。<m>\pi: G\to G/\ker(\phi)</m>とするとき、次を可換にするような<m>\psi:G/\ker(\phi)\to  H</m>が一意的に存在し、同型<m>\mathrm{Im}(\phi)\cong G/\ker(\phi)</m>を与える。
             </p>
             <image width="40%">
                 <latex-image>
@@ -101,7 +101,7 @@
         </statement>
         <proof>
             <p>
-                この証明はまず
+                この証明はまず<m>\psi</m>を構成し、それによる同型と一意性を確認するという手順を踏む。
             </p>
             <p>
                 <ol>
@@ -128,7 +128,7 @@
                             全単射性を示せば、<xref ref="prop-biject-hom" />より、これは同型になる。
                         </p>
                         <p>
-                            <m>\psi(gN)=1_H</m>なら<m>\phi(g)=1_H</m>なので<m>g\in N</m>であり、<m>gN=N</m>は<m>G/N</m>の単位元だから、これは単射。<m>g\in G</m>なら<m>\phi(g)=\psi(gN)</m>なので、<m>\mathrm{Im}(\phi)\subset \mathrm{Im}(\psi)</m>である。同様に、<m>\mathrm{Im}(\psi)\subset \mathrm{Im}(\phi)</m>である。<m>G/N\to \mathrm{\psi}</m>は定義より常に全射だから、<m>G/N\cong \mathrm{Im}(\psi)=\mathrm{Im}(\phi)</m>である。
+                            <m>\psi(gN)=1_H</m>なら<m>\phi(g)=1_H</m>なので<m>g\in N</m>であり、<m>gN=N</m>は<m>G/N</m>の単位元だから、これは単射。<m>g\in G</m>なら<m>\phi(g)=\psi(gN)</m>なので、<m>\mathrm{Im}(\phi)\subset \mathrm{Im}(\psi)</m>である。同様に、<m>\mathrm{Im}(\psi)\subset \mathrm{Im}(\phi)</m>である。<m>G/N\to \mathrm{Im}(\psi)</m>は定義より常に全射だから、<m>G/N\cong \mathrm{Im}(\psi)=\mathrm{Im}(\phi)</m>である。
                         </p>
                     </li>
                     <li>
@@ -182,6 +182,10 @@
 
         <p>
             このように、対象の「内部に同型な部分構造を見出す」ことを数学の言葉で<term>埋め込み(immersion)</term>という。この例では、<m>G/\ker(\phi)</m>を、同型<m>\psi</m>によって<m>H</m>に埋め込んでいると考えられる。
+        </p>
+
+        <p>
+            加えて、準同型定理そのものの解釈を述べる。<m>\phi</m>で送ると消える(<m>1_H</m>に行く)元のことを<m>\ker(\phi)</m>と呼んだのだったが、これは<m>\mathrm{Im}(\phi)</m>上ではすべて消えており、核の元に関する情報が押し潰されていると言える。一方で<m>G/\ker(\phi)</m>でも核の元は消えている。「<m>\phi</m>で送ること」と「商をとること」という、二つの異なった消し方をした群どうしが同型であるというのがこの定理の主張である。
         </p>
     </remark>
 
